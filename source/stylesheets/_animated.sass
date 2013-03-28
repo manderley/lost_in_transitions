@@ -1,0 +1,449 @@
+@import keyframes
+
+*
+	-webkit-animation-play-state: paused
+	-moz-animation-play-state: paused
+	-o-animation-play-state: paused
+	animation-play-state: paused
+
+.playing *
+	-webkit-animation-play-state: running
+	-moz-animation-play-state: running
+	-o-animation-play-state: running
+	animation-play-state: running
+
+#play
+	padding-bottom: 1em
+	color: #000
+	cursor: pointer
+
+html
+	font-family: $headingfont
+	
+section
+	overflow: hidden
+	position: relative
+	height: $frame-height
+	
+	h1
+		text-align: center
+		margin-top: 0
+		text-transform: uppercase
+		font-size: 0
+		letter-spacing: 1.1em
+		+animation("title 3s 1 ease-in-out 4.75s both")
+	
+	h2
+		position: absolute
+		top: 2em
+		left: 2em
+		text-transform: uppercase
+		letter-spacing: 0.5em
+		color: transparent
+		+font-size(16)
+
+	#find-me
+		+animation("text 5s 1 linear forwards")
+
+	h2#worked-for
+		display: none
+
+section
+	dl, ul
+		position: absolute
+		height: 100%
+		width: 100%
+
+ul#stars
+	top: 0
+	
+	li
+		position: absolute
+		letter-spacing: 0.8em
+		+font-size(16)
+				
+	span
+		color: transparent
+		position: absolute
+						
+#romola
+	top: 34%
+	left: 15%
+
+	.firstname
+		border-right: 10px solid #1e5a69
+		padding: 48px 18px 70px 8px
+		word-wrap: break-word
+		left: 0
+		top: -$frame-height
+		background-image: none
+		background-repeat: no-repeat
+		background-position: -2px 10px
+		//background: url("/images/linkedin-32.png") no-repeat -2px 10px
+		+animation("romola 5s 1 linear forwards")
+		
+	.lastname
+		top: 18.5em
+		left: 5em
+		+animation("text 5s 1 linear forwards")
+		
+#dominic
+	top: 23%
+	left: 41%
+				
+	.firstname
+		border-bottom: 10px solid #1e5a69
+		padding: 0 80px 258px 0
+		width: 8.125em
+		top: 0
+		left: $frame-width
+		+animation("dominic-firstname 5s 1 linear forwards")		
+		em
+			font-style: normal
+			display: inline-block
+			margin-left: -5em
+			
+	.lastname
+		word-wrap: break-word
+		border-left: 10px solid #1e5a69
+		padding: 48px 0 70px 18px
+		top: $frame-height
+		left: 7.5em
+		background-image: none
+		background-repeat: no-repeat
+		background-position: 8px 10px
+		//background: url("/images/twitter-32.png") no-repeat 8px 10px
+		+animation("dominic-lastname 5s 1 linear forwards")
+				
+#ben
+	top: 38%
+	left: 70%
+		
+	.firstname
+		top: 0
+		left: 0
+		+animation("text 5.5s 1 linear forwards")
+	.lastname
+		top: -$frame-height
+		left: 8.25em
+		height: 7.5em
+		overflow: visible
+		word-wrap: break-word
+		border-left: 10px solid #1e5a69
+		padding: 48px 0 0 20px
+		background-image: none
+		background-repeat: no-repeat
+		background-position: 10px 10px
+		//background: url("/images/github-32.png") no-repeat 10px 10px
+		+animation("ben 5s 1 linear forwards")
+
+#dominic, #ben 
+	.firstname
+		vertical-align: top
+
+#dominic .lastname, #ben .lastname, #romola .firstname
+	width: 1.125em
+	line-height: 1.8
+
+dd, dt, ul#names li
+	color: transparent
+	position: absolute
+	text-transform: uppercase
+
+dl#writer
+	top: 0
+	right: 0
+	dt
+		top: 135px
+		left: 150px
+		+font-size(14)
+		letter-spacing: 0.6em
+		+animation("text 5.5s 1 ease-in forwards 9s")
+
+	dd
+		top: 308px
+		left: 585px
+		+font-size(20)
+		letter-spacing: 1em
+		+animation("text 5.5s 1 ease-in forwards 9s")
+
+div.decoration
+	position: absolute
+
+#deco-box
+	background: transparent
+	top: $deco-base-unit*7
+	right: $deco-base-unit*4
+	width: $deco-base-unit*7
+	height: $deco-base-unit*7
+	box-shadow: -$deco-base-unit*7 0 0 $shadowbox1-transparent, -$deco-base-unit*22.4 -$deco-base-unit*70 0 $shadowbox2-transparent, -$deco-base-unit*29.4 -$deco-base-unit*70 0 $shadowbox3-transparent, -$deco-base-unit*50.4 $deco-base-unit*30.8 0 $shadowbox4-transparent, -$deco-base-unit*29.4 $deco-base-unit*23.8 0 $shadowbox5-transparent, -$deco-base-unit*29.4 $deco-base-unit*30.8 0 $shadowbox6-transparent, -$deco-base-unit*43.4 $deco-base-unit*30.8 0 $shadowbox7-transparent, -$deco-base-unit*9.8 $deco-base-unit*30.8 0 $shadowbox8-transparent, -$deco-base-unit*2.8 $deco-base-unit*30.8 0 $shadowbox9-transparent, 0 $deco-base-unit*23.8 0 $shadowbox10-transparent, 0 $deco-base-unit*7 0 $shadowbox11-transparent
+	+animation("box 12s 1 linear forwards 7.75s")
+
+#deco-line1
+	background: transparent
+	width: $deco-base-unit
+	height: 0
+	top: -$frame-height/2
+	right: $deco-base-unit*23
+	//top: -$deco-base-unit*5.6
+	//height: $deco-base-unit*33.6
+	//background: $shapecolor
+	+animation("line1 4.25s 1 ease-in forwards 15.25s")
+
+#deco-line2
+	background: transparent
+	width: $deco-base-unit
+	height: 0
+	top: -$frame-height/2
+	right: $deco-base-unit*16.5
+	//top: -$deco-base-unit*4.2
+	//height: $deco-base-unit*29.4
+	//background: $shapecolor
+	+animation("line2 4.25s 1 ease-in forwards 15.25s")
+
+#deco-line3
+	background: transparent
+	width: 0
+	height: $deco-base-unit
+	top: $deco-base-unit*7
+	right: -$frame-width/2
+	//right: 0
+	//width: $deco-base-unit*56 
+	//background: $shapecolor
+	+animation("line3 4.25s 1 ease-in forwards 15.25s")
+
+#deco-line4
+	background: transparent
+	width: 0
+	height: $deco-base-unit
+	right: -$frame-width/2
+	top: $deco-base-unit*14
+	//right: $deco-base-unit*3.6
+	//width: $deco-base-unit*42
+	//background: $shapecolor
+	+animation("line4 4.25s 1 ease-in forwards 15.25s")
+
+#deco-innerbox
+	background: transparent
+	width: $deco-base-unit*7
+	height: $deco-base-unit*7
+	top: $deco-base-unit*7
+	right: $deco-base-unit*16.75
+	//right: $deco-base-unit*45
+	//background: $shapecolor
+	+animation("innerbox 4.35s 1 linear forwards 19s")
+
+#deco-line5
+	background: transparent
+	top: -$frame-height
+	right: $deco-base-unit*49
+	width: $deco-base-unit
+	height: 0
+	//background: $shapecolor
+	//top: $deco-base-unit*5
+	//height: $deco-base-unit*12
+	+animation("line5 3s 1 linear forwards 19.75s")
+
+#deco-line6
+	background: transparent
+	top: -$frame-height
+	right: $deco-base-unit*45
+	width: $deco-base-unit
+	height: 0
+	//background: $shapecolor
+	//top: $deco-base-unit*5
+	//height: $deco-base-unit*11
+	+animation("line6 3s 1 linear forwards 19.75s")
+	
+#deco-line7
+	background: transparent
+	top: $deco-base-unit*9
+	right: -$frame-width
+	width: 0
+	height: $deco-base-unit
+	//background: $shapecolor
+	//right: $deco-base-unit*43
+	//width: $deco-base-unit*12
+	+animation("line7 3s 1 linear forwards 19.75s")
+
+#deco-line8
+	background: transparent
+	top: $deco-base-unit*13
+	right: -$frame-width
+	width: 0
+	height: $deco-base-unit
+	//background: $shapecolor
+	//right: $deco-base-unit*43
+	//width: $deco-base-unit*11
+	+animation("line8 3s 1 linear forwards 19.75s")
+
+#deco-line9
+	background: transparent
+	top: $frame-height*1.2
+	right: $deco-base-unit*47
+	width: $deco-base-unit
+	height: 0
+	//background: $shapecolor
+	//top: $deco-base-unit*4
+	//height: $deco-base-unit*12
+	+animation("line9 3s 1 linear forwards 19.75s")
+
+#deco-line10
+	background: transparent
+	top: $frame-height*1.2
+	right: $deco-base-unit*51
+	width: $deco-base-unit
+	height: 0
+	//background: $shapecolor
+	//top: $deco-base-unit*5
+	//height: $deco-base-unit*11
+	+animation("line10 3s 1 linear forwards 19.75s")
+
+#deco-line11
+	background: transparent
+	top: $deco-base-unit*11
+	right: $frame-width*1.3
+	width: 0
+	height: $deco-base-unit
+	//background: $shapecolor
+	//right: $deco-base-unit*42
+	//width: $deco-base-unit*12
+	+animation("line11 3s 1 linear forwards 19.75s")
+
+#deco-line12
+	background: transparent
+	top: $deco-base-unit*7
+	right: $frame-width*1.3
+	width: 0
+	height: $deco-base-unit
+	//background: $shapecolor
+	//right: $deco-base-unit*43
+	//width: $deco-base-unit*11
+	+animation("line12 3s 1 linear forwards 19.75s")
+
+#deco-innerbox2
+	background: transparent
+	width: $deco-base-unit
+	height: $deco-base-unit
+	top: $deco-base-unit*5
+	right: $deco-base-unit*43
+	overflow: visible
+	box-shadow: -$deco-base-unit*2 0 0 transparent, -$deco-base-unit*2 $deco-base-unit 0 transparent, -$deco-base-unit*4 (-$deco-base-unit) 0 transparent, -$deco-base-unit*4 0 0 transparent, -$deco-base-unit*4 $deco-base-unit 0 transparent, -$deco-base-unit*6 0 0 transparent, -$deco-base-unit*6 $deco-base-unit 0 transparent, -$deco-base-unit*8 0 0 transparent, -$deco-base-unit*8 $deco-base-unit 0 transparent, -$deco-base-unit*10 0 0 transparent, -$deco-base-unit*10 $deco-base-unit*2 0 transparent, -$deco-base-unit*9 $deco-base-unit*2 0 transparent, -$deco-base-unit*11 $deco-base-unit*4 0 transparent, -$deco-base-unit*10 $deco-base-unit*4 0 transparent, -$deco-base-unit*9 $deco-base-unit*4 0 transparent, -$deco-base-unit*10 $deco-base-unit*6 0 transparent, -$deco-base-unit*9 $deco-base-unit*6 0 transparent, -$deco-base-unit*10 $deco-base-unit*8 0 transparent, -$deco-base-unit*9 $deco-base-unit*8 0 transparent, -$deco-base-unit*10 $deco-base-unit*10 0 transparent, -$deco-base-unit*8 $deco-base-unit*9 0 transparent, -$deco-base-unit*8 $deco-base-unit*10 0 transparent, -$deco-base-unit*6 $deco-base-unit*9 0 transparent, -$deco-base-unit*6 $deco-base-unit*10 0 transparent, -$deco-base-unit*6 $deco-base-unit*11 0 transparent, -$deco-base-unit*4 $deco-base-unit*9 0 transparent, -$deco-base-unit*4 $deco-base-unit*10 0 transparent, -$deco-base-unit*2 $deco-base-unit*9 0 transparent, -$deco-base-unit*2 $deco-base-unit*10 0 transparent, 0 $deco-base-unit*10 0 transparent, -$deco-base-unit $deco-base-unit*8 0 transparent, 0 $deco-base-unit*8 0 transparent, -$deco-base-unit $deco-base-unit*6 0 transparent, $deco-base-unit $deco-base-unit*6 0 transparent, 0 $deco-base-unit*6 0 transparent, -$deco-base-unit $deco-base-unit*4 0 transparent, 0 $deco-base-unit*4 0 transparent, -$deco-base-unit $deco-base-unit*2 0 transparent, 0 $deco-base-unit*2 0 transparent, -$deco-base-unit*5 $deco-base-unit*5 0 transparent, -$deco-base-unit*6 $deco-base-unit*3 0 transparent, -$deco-base-unit*7 $deco-base-unit*3 0 transparent, -$deco-base-unit*7 $deco-base-unit*4 0 transparent, -$deco-base-unit*7 $deco-base-unit*6 0 transparent, -$deco-base-unit*7 $deco-base-unit*7 0 transparent, -$deco-base-unit*6 $deco-base-unit*7 0 transparent, -$deco-base-unit*4 $deco-base-unit*7 0 transparent, -$deco-base-unit*3 $deco-base-unit*7 0 transparent, -$deco-base-unit*3 $deco-base-unit*6 0 transparent, -$deco-base-unit*3 $deco-base-unit*4 0 transparent, -$deco-base-unit*3 $deco-base-unit*3 0 transparent, -$deco-base-unit*4 $deco-base-unit*3 0 transparent
+	+animation("innerbox2 10.75s 1 linear forwards 21.25s")
+
+#deco-grid1, #deco-grid2
+	position: absolute
+	background: transparent
+	top: -$deco-base-unit
+	right: -$deco-base-unit
+
+#deco-grid1
+	width: $deco-base-unit*13
+	height: 1px
+	box-shadow: 0 $deco-base-unit 0 transparent, 0 $deco-base-unit*2 0 transparent, 0 $deco-base-unit*3 0 transparent, 0 $deco-base-unit*4 0 transparent, 0 $deco-base-unit*5 0 transparent, 0 $deco-base-unit*6 0 transparent, 0 $deco-base-unit*7 0 transparent, 0 $deco-base-unit*8 0 transparent, 0 $deco-base-unit*9 0 transparent, 0 $deco-base-unit*10 0 transparent, 0 $deco-base-unit*11 0 transparent, 0 $deco-base-unit*12 0 transparent, 0 $deco-base-unit*13 0 transparent
+	+animation("grid1 7.5s 1 ease-in-out forwards 24.5s")
+
+#deco-grid2
+	width: 1px
+	height: $deco-base-unit*13
+	box-shadow: -$deco-base-unit 0 0 transparent, -$deco-base-unit*2 0 0 transparent, -$deco-base-unit*3 0 0 transparent, -$deco-base-unit*4 0 0 transparent, -$deco-base-unit*5 0 0 transparent, -$deco-base-unit*6 0 0 transparent, -$deco-base-unit*7 0 0 transparent, -$deco-base-unit*8 0 0 transparent, -$deco-base-unit*9 0 0 transparent, -$deco-base-unit*10 0 0 transparent, -$deco-base-unit*11 0 0 transparent, -$deco-base-unit*12 0 0 transparent, -$deco-base-unit*13 0 0 transparent
+	+animation("grid2 7.5s 1 ease-in-out forwards 24.5s")
+
+ul#names
+	top: 0
+	left: 0
+	li
+		+font-size(19)
+		width: auto
+		letter-spacing: 0.6em
+		white-space: nowrap
+
+#name1
+	top: 0
+	left: -50%
+	+animation("name-1 4s 1 linear both 11.5s")
+
+#name2
+	top: 150%
+	left: 100%
+	+animation("name-2 4s 1 linear both 11.5s")
+
+#name3
+	left: 15%
+	top: 70%
+	+animation("text 3.75s 1 linear both 15s")
+
+#name4
+	left: 18%
+	top: 75%
+	+animation("text 3.75s 1 linear both 15s")
+
+#name5
+	right: 20%
+	top: 75%
+	+animation("text 3.75s 1 linear both 17s")
+
+#name6
+	right: 23%
+	top: 80%
+	+animation("text 3.75s 1 linear both 17s")
+
+#name7
+	right: -50%
+	top: 60%
+	+animation("name-7 3.5s 1 linear both 19s")
+
+#name8
+	right: 20%
+	top: 65%
+	+animation("text 3.5s 1 linear both 20s")
+
+#name9
+	top: 235px
+	//left: 222px
+	left: -$frame-width/2
+	+animation("name-9 3s 1 linear both 22s")
+
+#name10
+	top: 380px
+	//left: 270px
+	left: -$frame-width/2
+	+animation("name-10 3s 1 linear both 22s")
+
+#producer
+	dt, dd
+		+animation("text 2.75s 1 linear both 26.25s")
+	dt
+		top: 110px
+		left: 98px
+		letter-spacing: 0.4em
+	dd
+		top: 245px
+		left: 385px
+		letter-spacing: 1.55em
+		+font-size(19)
+	.lastname
+		position: absolute
+		left: 0
+		top: 85px
+		em
+			font-style: normal
+			padding-left: 50px
+			white-space: nowrap
+
+#director
+	dt, dd
+		+animation("text 4s 1 linear both 28s")
+	dt
+		top: 110px
+		left: 98px
+		letter-spacing: 0.4em
+	dd
+		top: 245px
+		left: 384px
+		letter-spacing: 1.55em
+		+font-size(19)
+	.lastname
+		position: absolute
+		left: 125px
+		top: 210px

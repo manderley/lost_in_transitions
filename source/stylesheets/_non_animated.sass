@@ -1,0 +1,120 @@
+.no-js
+	section h1, #romola .firstname, #romola .lastname, #dominic .firstname, #dominic .lastname, #ben .firstname, #ben .lastname, dl#writer dt, dl#writer dd, #name1, #name2, #name3, #name4, #name9, #name10, #name5, #name6, #name7, #name8, #producer dt, #producer dd, #director dt, #director dd
+		-webkit-animation: none
+		-moz-animation: none
+		-o-animation: none
+		animation: none
+		
+	.decoration
+		display: none
+
+	section
+		background: #fff
+		height: auto
+		text-align: left
+		+box-sizing
+		padding: $baseline $baseline 0 $baseline
+		border-top: 1px solid #808080
+		border-bottom: 1px solid #808080
+
+	header, section, footer
+		width: 60%
+		max-width: 64em
+
+	h1, h2, dd
+		font-family: $headingfont
+
+	// display or use main page title?
+	h1
+		+font-size(18)
+		letter-spacing: normal
+
+	h2
+		display: block
+		color: $subheadingcolor
+
+	ul, dd, dl, li, dt, ul#names li, ul#stars li
+		position: relative
+		height: auto
+		width: auto
+		text-transform: none
+
+	#stars, #writer, #romola, #dominic, #ben
+		top: auto
+		left: auto
+		right: auto
+
+	#stars
+		li
+			position: relative
+			letter-spacing: normal
+		span
+			position: relative
+			color: $nonanimatedtextcolor
+
+	#romola .firstname, #romola .lastname, #dominic .firstname, #dominic .lastname, #ben .firstname, #ben .lastname
+		left: auto
+		top: auto
+		padding: 0
+		border: none
+		width: auto
+		height: auto
+
+	#dominic .firstname em
+		display: inline
+		margin-left: auto
+
+	#dominic, #ben
+		.firstname
+			vertical-align: baseline
+
+	dl#writer
+		top: auto
+		left: auto
+		dt, dd
+			top: auto
+			left: auto
+			color: $nonanimatedtextcolor
+			letter-spacing: normal
+
+	ul#names
+		top: auto
+		left: auto
+		li
+			letter-spacing: normal
+			color: $nonanimatedtextcolor
+
+	#name1, #name2, #name3, #name4, #name9, #name10
+		top: auto
+		left: auto
+
+	#name5, #name6, #name7, #name8
+		top: auto
+		right: auto
+
+	#producer, #director
+		dt, dd
+			top: auto
+			left: auto
+			letter-spacing: normal
+			color: $nonanimatedtextcolor
+
+		.lastname
+			position: relative
+			top: auto
+			left: auto
+
+	#producer .lastname	em
+		padding-left: 0
+
+	#dominic .lastname, #ben .lastname, #romola .firstname
+		line-height: 1
+
+	ul, dl
+		margin-bottom: $baseline*1.5
+
+	li, dd
+		line-height: $baselineheight
+
+	h2, dt
+		margin-bottom: $baseline/2
