@@ -1,5 +1,5 @@
 .no-js
-	section h1, #romola .firstname, #romola .lastname, #dominic .firstname, #dominic .lastname, #ben .firstname, #ben .lastname, dl#writer dt, dl#writer dd, #name1, #name2, #name3, #name4, #name9, #name10, #name5, #name6, #name7, #name8, #producer dt, #producer dd, #director dt, #director dd
+	section h1, section h2, #social dt.linkedin, #social dd.linkedin, #social dt.twitter, #social dd.twitter, #social dt.github, #social dd.github, section dl dt, section dl dd, #companies li .company, #companies li .date, #skills li
 		-webkit-animation: none
 		-moz-animation: none
 		-o-animation: none
@@ -7,6 +7,10 @@
 		
 	.decoration
 		display: none
+
+	header, section, footer
+		width: 60%
+		max-width: 64em
 
 	section
 		background: #fff
@@ -17,98 +21,94 @@
 		border-top: 1px solid #808080
 		border-bottom: 1px solid #808080
 
-	header, section, footer
-		width: 60%
-		max-width: 64em
+		// display or use main page title?
+		h1
+			+font-size(18)
+			width: auto
+			color: #000
+			
+		h2
+			display: block
+			
+		h1, h2
+			position: relative
+			top: auto
+			left: auto
+			letter-spacing: normal
+			text-transform: none
 
-	h1, h2, dd
-		font-family: $headingfont
+		dl, ul, ol
+			position: relative
+			height: auto
+			width: auto
 
-	// display or use main page title?
-	h1
-		+font-size(18)
-		letter-spacing: normal
-
-	h2
-		display: block
+		dl
+			top: auto
+			right: auto
+			dt, dd
+				top: auto
+				left: auto
+				letter-spacing: normal
+			dd
+				+font-size($basefontsize)
+	
+	h2, dt
+		font-family: $subheadingfont
 		color: $subheadingcolor
 
-	ul, dd, dl, li, dt, ul#names li, ul#stars li
+	dd, dt, #companies li, #skills li
+		color: $textcolor
 		position: relative
-		height: auto
-		width: auto
 		text-transform: none
 
-	#stars, #writer, #romola, #dominic, #ben
-		top: auto
-		left: auto
-		right: auto
-
-	#stars
-		li
+	#social
+		dt
+			color: $textcolor
+			line-height: $baselineheight
+		dd, dt
 			position: relative
+			padding: 0
+			width: auto
+			height: auto
 			letter-spacing: normal
-		span
-			position: relative
-			color: $nonanimatedtextcolor
-
-	#romola .firstname, #romola .lastname, #dominic .firstname, #dominic .lastname, #ben .firstname, #ben .lastname
-		left: auto
-		top: auto
-		padding: 0
-		border: none
+		.linkedin, .twitter, .github
+			border: none
+			top: auto
+			left: auto
+		
+		dd.twitter 
+			em
+				margin-left: auto
+		
+	ol#companies
+		position: relative
 		width: auto
 		height: auto
-
-	#dominic .firstname em
-		display: inline
-		margin-left: auto
-
-	#dominic, #ben
-		.firstname
-			vertical-align: baseline
-
-	dl#writer
-		top: auto
-		left: auto
-		dt, dd
-			top: auto
-			left: auto
-			color: $nonanimatedtextcolor
-			letter-spacing: normal
-
-	ul#names
 		top: auto
 		left: auto
 		li
-			letter-spacing: normal
-			color: $nonanimatedtextcolor
+			position: relative
+			height: auto
+			width: auto
+			top: auto
+			left: auto
+			text-transform: none
 
-	#name1, #name2, #name3, #name4, #name9, #name10
+		span
+			position: relative
+			letter-spacing: normal
+			color: $textcolor
+			+font-size($basefontsize)
+		.company, .date
+			top: auto
+			left: auto
+			right: auto
+
+	#skills li
+		letter-spacing: normal
+		+font-size($basefontsize)
 		top: auto
 		left: auto
-
-	#name5, #name6, #name7, #name8
-		top: auto
-		right: auto
-
-	#producer, #director
-		dt, dd
-			top: auto
-			left: auto
-			letter-spacing: normal
-			color: $nonanimatedtextcolor
-
-		.lastname
-			position: relative
-			top: auto
-			left: auto
-
-	#producer .lastname	em
-		padding-left: 0
-
-	#dominic .lastname, #ben .lastname, #romola .firstname
-		line-height: 1
 
 	ul, dl
 		margin-bottom: $baseline*1.5

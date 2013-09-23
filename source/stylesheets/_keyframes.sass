@@ -2,181 +2,145 @@
 	0%, 15%
 		color: transparent
 	50%
-		color: $textcolor
+		color: $animationtextcolor
 	70%, 100%
 		color: transparent
 
-+keyframes(romola)
++keyframes(linkedin-dt)
 	30%, 75%
-		top: 0
+		-moz-transform: translateY(1288px)
+		-webkit-transform: translateY(1288px)
+		-o-transform: translateY(1288px)
+		transform: translateY(1288px)
 		color: transparent
-		background-image: none
+		background-size: 0 0
+		background-position: 14px 26px
 	50%, 70%
-		top: 0
-		color: $textcolor
-		background-image: url("/images/linkedin-32.png")
-	
-+keyframes(dominic-firstname)
+		-moz-transform: translateY(1288px)
+		-webkit-transform: translateY(1288px)
+		-o-transform: translateY(1288px)
+		transform: translateY(1288px)
+		color: $animationtextcolor
+		background-position: -2px 10px
+		background-size: 32px 32px
+		
++keyframes(twitter-dt)
+	30%, 75%
+		-moz-transform: translateY(-880px)
+		-webkit-transform: translateY(-880px)
+		-o-transform: translateY(-880px)
+		transform: translateY(-880px)
+		color: transparent
+		background-position: 24px 26px
+		background-size: 0 0
+	35%, 70%
+		-moz-transform: translateY(-880px)
+		-webkit-transform: translateY(-880px)
+		-o-transform: translateY(-880px)
+		transform: translateY(-880px)
+		color: $animationtextcolor
+		background-position: 8px 10px
+		background-size: 32px 32px
+		
++keyframes(twitter-dd)
 	20%, 75%
-		left: 0
+		-moz-transform: translateX(-1118px)
+		-webkit-transform: translateX(-1118px)
+		-o-transform: translateX(-1118px)
+		transform: translateX(-1118px)
 		color: transparent
 		overflow: visible
 	50%, 70%
-		left: 0
-		color: $textcolor
+		-moz-transform: translateX(-1118px)
+		-webkit-transform: translateX(-1118px)
+		-o-transform: translateX(-1118px)
+		transform: translateX(-1118px)
+		color: $animationtextcolor
 		overflow: visible
-	
-+keyframes(dominic-lastname)
-	30%, 75%
-		top: 0
-		color: transparent
-		background-image: none
-	35%, 70%
-		top: 0
-		color: $textcolor
-		background-image: url("/images/twitter-32.png")
-	
-+keyframes(ben)
-	30%, 75%
-		top: 35px
-		color: transparent
-		background-image: none
-	35%, 70%
-		top: 35px
-		color: $textcolor
-		background-image: url("/images/github-32.png")
 
-+keyframes(title)
-	5%, 85%
-		margin-top: 30%
++keyframes(github-dt)
+	30%, 75%
+		-moz-transform: translateY(1348px)
+		-webkit-transform: translateY(1348px)
+		-o-transform: translateY(1348px)
+		transform: translateY(1348px)
 		color: transparent
-		+font-size(0)
-	15%, 80%
-		margin-top: 30%
-		color: $textcolor
-		+font-size(20)
-		letter-spacing: 1.1em
-
+		background-position: 26px 26px
+		background-size: 0 0
+	35%, 70%
+		-moz-transform: translateY(1348px)
+		-webkit-transform: translateY(1348px)
+		-o-transform: translateY(1348px)
+		transform: translateY(1348px)
+		color: $animationtextcolor
+		background-position: 10px 10px
+		background-size: 32px 32px
+		
 +keyframes(box)
+	8%, 30%
+		-moz-transform: translate(0, 0)
+		-webkit-transform: translate(0, 0)
+		-o-transform: translate(0, 0)
+		transform: translate(0, 0)
+		background: $shapecolor
+	32%, 36%
+		-moz-transform: translate(-$deco-base-unit*4, $deco-base-unit*4)
+		-webkit-transform: translate(-$deco-base-unit*4, $deco-base-unit*4)
+		-o-transform: translate(-$deco-base-unit*4, $deco-base-unit*4)
+		transform: translate(-$deco-base-unit*4, $deco-base-unit*4)
+		background: $shapecolor
+	40%, 100%
+		-moz-transform: translate(-$deco-base-unit*4, $deco-base-unit*4)
+		-webkit-transform: translate(-$deco-base-unit*4, $deco-base-unit*4)
+		-o-transform: translate(-$deco-base-unit*4, $deco-base-unit*4)
+		transform: translate(-$deco-base-unit*4, $deco-base-unit*4)
+		background: transparent
+		
++keyframes(box-shadows)
 	// 7s: first 3 shapes (comprising boxes 1, 4, 5, 6, 7, 11) appear
 	8%
-		-moz-transform: translateX(0) translateY(0)
-		-webkit-transform: translateX(0) translateY(0)
-		-o-transform: translateX(0) translateY(0)
-		transform: translateX(0) translateY(0)
-		background: $shapecolor
-		box-shadow: -$deco-base-unit*7 0 0 $shadowbox1, -$deco-base-unit*22.4 -$deco-base-unit*70 0 $shadowbox2-transparent, -$deco-base-unit*29.4 -$deco-base-unit*70 0 $shadowbox3-transparent, -$deco-base-unit*50.4 $deco-base-unit*30.8 0 $shadowbox4, -$deco-base-unit*29.4 $deco-base-unit*23.8 0 $shadowbox5, -$deco-base-unit*29.4 $deco-base-unit*30.8 0 $shadowbox6, -$deco-base-unit*43.4 $deco-base-unit*30.8 0 $shadowbox7, -$deco-base-unit*9.8 $deco-base-unit*30.8 0 $shadowbox8-transparent, -$deco-base-unit*2.8 $deco-base-unit*30.8 0 $shadowbox9-transparent, 0 $deco-base-unit*23.8 0 $shadowbox10-transparent, 0 $deco-base-unit*7 0 $shadowbox11
+		box-shadow: -$deco-base-unit*7 0 0 $shadowbox1, -$deco-base-unit*22.4 (-$deco-base-unit*70) 0 $shadowbox2-transparent, -$deco-base-unit*29.4 (-$deco-base-unit*70) 0 $shadowbox3-transparent, -$deco-base-unit*50.4 $deco-base-unit*30.8 0 $shadowbox4, -$deco-base-unit*29.4 $deco-base-unit*23.8 0 $shadowbox5, -$deco-base-unit*29.4 $deco-base-unit*30.8 0 $shadowbox6, -$deco-base-unit*43.4 $deco-base-unit*30.8 0 $shadowbox7, -$deco-base-unit*9.8 $deco-base-unit*30.8 0 $shadowbox8-transparent, -$deco-base-unit*2.8 $deco-base-unit*30.8 0 $shadowbox9-transparent, 0 $deco-base-unit*23.8 0 $shadowbox10-transparent, 0 $deco-base-unit*7 0 $shadowbox11
 	// 8s: 4th shape (comprising boxes 8 and 9) appears
-	16%
-		-moz-transform: translateX(0) translateY(0)
-		-webkit-transform: translateX(0) translateY(0)
-		-o-transform: translateX(0) translateY(0)
-		transform: translateX(0) translateY(0)
-		background: $shapecolor
-		box-shadow: -$deco-base-unit*7 0 0 $shadowbox1, -$deco-base-unit*22.4 -$deco-base-unit*70 0 $shadowbox2-transparent, -$deco-base-unit*29.4 -$deco-base-unit*70 0 $shadowbox3-transparent, -$deco-base-unit*50.4 $deco-base-unit*30.8 0 $shadowbox4, -$deco-base-unit*29.4 $deco-base-unit*23.8 0 $shadowbox5, -$deco-base-unit*29.4 $deco-base-unit*30.8 0 $shadowbox6, -$deco-base-unit*43.4 $deco-base-unit*30.8 0 $shadowbox7, -$deco-base-unit*9.8 $deco-base-unit*30.8 0 $shadowbox8, -$deco-base-unit*2.8 $deco-base-unit*30.8 0 $shadowbox9, 0 $deco-base-unit*23.8 0 $shadowbox10-transparent, 0 $deco-base-unit*7 0 $shadowbox11
+	16%, 18%
+		box-shadow: -$deco-base-unit*7 0 0 $shadowbox1, -$deco-base-unit*22.4 (-$deco-base-unit*70) 0 $shadowbox2-transparent, -$deco-base-unit*29.4 (-$deco-base-unit*70) 0 $shadowbox3-transparent, -$deco-base-unit*50.4 $deco-base-unit*30.8 0 $shadowbox4, -$deco-base-unit*29.4 $deco-base-unit*23.8 0 $shadowbox5, -$deco-base-unit*29.4 $deco-base-unit*30.8 0 $shadowbox6, -$deco-base-unit*43.4 $deco-base-unit*30.8 0 $shadowbox7, -$deco-base-unit*9.8 $deco-base-unit*30.8 0 $shadowbox8, -$deco-base-unit*2.8 $deco-base-unit*30.8 0 $shadowbox9, 0 $deco-base-unit*23.8 0 $shadowbox10-transparent, 0 $deco-base-unit*7 0 $shadowbox11
 	// 10s: top block (boxes 2 and 3) moves down, boxes 4 and 7 move to right, 8 and 9 move to right
-	20%
-		-moz-transform: translateX(0) translateY(0)
-		-webkit-transform: translateX(0) translateY(0)
-		-o-transform: translateX(0) translateY(0)
-		transform: translateX(0) translateY(0)
-		background: $shapecolor
+	20%, 24%
 		box-shadow: -$deco-base-unit*7 0 0 $shadowbox1, -$deco-base-unit*22.4 0 0 $shadowbox2, -$deco-base-unit*29.4 0 0 $shadowbox3, -$deco-base-unit*36.4 $deco-base-unit*30.8 0 $shadowbox4, -$deco-base-unit*29.4 $deco-base-unit*23.8 0 $shadowbox5, -$deco-base-unit*29.4 $deco-base-unit*30.8 0 $shadowbox6, -$deco-base-unit*29.4 $deco-base-unit*30.8 0 $shadowbox7, -$deco-base-unit*7 $deco-base-unit*30.8 0 $shadowbox8, 0 $deco-base-unit*30.8 0 $shadowbox9, 0 $deco-base-unit*23.8 0 $shadowbox10-transparent, 0 $deco-base-unit*7 0 $shadowbox11
 	// 11s: boxes rearrange as 4 corners of square
-	26%
-		-moz-transform: translateX(0) translateY(0)
-		-webkit-transform: translateX(0) translateY(0)
-		-o-transform: translateX(0) translateY(0)
-		transform: translateX(0) translateY(0)
-		background: $shapecolor
+	26%, 28%
 		box-shadow: -$deco-base-unit*7 0 0 $shadowbox1, -$deco-base-unit*22.4 0 0 $shadowbox2, -$deco-base-unit*29.4 0 0 $shadowbox3, -$deco-base-unit*29.4 $deco-base-unit*7 0 $shadowbox4, -$deco-base-unit*29.4 $deco-base-unit*23.8 0 $shadowbox5, -$deco-base-unit*29.4 $deco-base-unit*30.8 0 $shadowbox6, -$deco-base-unit*22.4 $deco-base-unit*30.8 0 $shadowbox7, -$deco-base-unit*7 $deco-base-unit*30.8 0 $shadowbox8, 0 $deco-base-unit*30.8 0 $shadowbox9, 0 $deco-base-unit*23.8 0 $shadowbox10, 0 $deco-base-unit*7 0 $shadowbox11
 	// 12s: corners move inwards
-	32%
-		-moz-transform: translateX(-$deco-base-unit*4) translateY($deco-base-unit*4)
-		-webkit-transform: translateX(-$deco-base-unit*4) translateY($deco-base-unit*4)
-		-o-transform: translateX(-$deco-base-unit*4) translateY($deco-base-unit*4)
-		transform: translateX(-$deco-base-unit*4) translateY($deco-base-unit*4)
-		background: $shapecolor
+	33%, 36%
 		box-shadow: -$deco-base-unit*7 0 0 $shadowbox1, -$deco-base-unit*16.8 0 0 $shadowbox2, -$deco-base-unit*23.8 0 0 $shadowbox3, -$deco-base-unit*23.8 $deco-base-unit*7 0 $shadowbox4, -$deco-base-unit*23.8 $deco-base-unit*16.8 0 $shadowbox5, -$deco-base-unit*23.8 $deco-base-unit*23.8 0 $shadowbox6, -$deco-base-unit*16.8 $deco-base-unit*23.8 0 $shadowbox7, -$deco-base-unit*7 $deco-base-unit*23.8 0 $shadowbox8, 0 $deco-base-unit*23.8 0 $shadowbox9, 0 $deco-base-unit*16.8 0 $shadowbox10, 0 $deco-base-unit*7 0 $shadowbox11
 	// 13s: top right (original DIV, boxes 1 and 11) and bottom left (boxes 5, 6, 7) corners disappear
-	40%
-		-moz-transform: translateX(-$deco-base-unit*4) translateY($deco-base-unit*4)
-		-webkit-transform: translateX(-$deco-base-unit*4) translateY($deco-base-unit*4)
-		-o-transform: translateX(-$deco-base-unit*4) translateY($deco-base-unit*4)
-		transform: translateX(-$deco-base-unit*4) translateY($deco-base-unit*4)
-		background: transparent
+	40%, 48%
 		box-shadow: -$deco-base-unit*7 0 0 $shadowbox1-transparent, -$deco-base-unit*16.8 0 0 $shadowbox2, -$deco-base-unit*23.8 0 0 $shadowbox3, -$deco-base-unit*23.8 $deco-base-unit*7 0 $shadowbox4, -$deco-base-unit*23.8 $deco-base-unit*16.8 0 $shadowbox5-transparent, -$deco-base-unit*23.8 $deco-base-unit*23.8 0 $shadowbox6-transparent, -$deco-base-unit*16.8 $deco-base-unit*23.8 0 $shadowbox7-transparent, -$deco-base-unit*7 $deco-base-unit*23.8 0 $shadowbox8, 0 $deco-base-unit*23.8 0 $shadowbox9, 0 $deco-base-unit*16.8 0 $shadowbox10, 0 $deco-base-unit*7 0 $shadowbox11-transparent
 	// 15s: remaining corners move inwards until touching
 	52%, 75%
-		-moz-transform: translateX(-$deco-base-unit*4) translateY($deco-base-unit*4)
-		-webkit-transform: translateX(-$deco-base-unit*4) translateY($deco-base-unit*4)
-		-o-transform: translateX(-$deco-base-unit*4) translateY($deco-base-unit*4)
-		transform: translateX(-$deco-base-unit*4) translateY($deco-base-unit*4)
-		background: transparent
 		box-shadow: -$deco-base-unit*7 0 0 $shadowbox1-transparent, -$deco-base-unit*16.8 0 0 $shadowbox2, -$deco-base-unit*23.8 0 0 $shadowbox3, -$deco-base-unit*23.8 $deco-base-unit*7 0 $shadowbox4, -$deco-base-unit*23.8 $deco-base-unit*16.8 0 $shadowbox5-transparent, -$deco-base-unit*23.8 $deco-base-unit*23.8 0 $shadowbox6-transparent, -$deco-base-unit*16.8 $deco-base-unit*23.8 0 $shadowbox7-transparent, -$deco-base-unit*16.8 $deco-base-unit*14 0 $shadowbox8, -$deco-base-unit*9.8 $deco-base-unit*14 0 $shadowbox9, -$deco-base-unit*9.8 $deco-base-unit*7 0 $shadowbox10, 0 $deco-base-unit*7 0 $shadowbox11-transparent
 	// 16.5s: 3 moves slightly to left
 	78%
-		-moz-transform: translateX(-$deco-base-unit*4) translateY($deco-base-unit*4)
-		-webkit-transform: translateX(-$deco-base-unit*4) translateY($deco-base-unit*4)
-		-o-transform: translateX(-$deco-base-unit*4) translateY($deco-base-unit*4)
-		transform: translateX(-$deco-base-unit*4) translateY($deco-base-unit*4)
-		background: transparent
 		box-shadow: -$deco-base-unit*7 0 0 $shadowbox1-transparent, -$deco-base-unit*16.8 0 0 $shadowbox2, -$deco-base-unit*26.6 0 0 $shadowbox3, -$deco-base-unit*23.8 $deco-base-unit*7 0 $shadowbox4, -$deco-base-unit*23.8 $deco-base-unit*16.8 0 $shadowbox5-transparent, -$deco-base-unit*23.8 $deco-base-unit*23.8 0 $shadowbox6-transparent, -$deco-base-unit*16.8 $deco-base-unit*23.8 0 $shadowbox7-transparent, -$deco-base-unit*16.8 $deco-base-unit*14 0 $shadowbox8, -$deco-base-unit*9.8 $deco-base-unit*14 0 $shadowbox9, -$deco-base-unit*9.8 $deco-base-unit*7 0 $shadowbox10, 0 $deco-base-unit*7 0 $shadowbox11-transparent
 	// 17s: 10 moves up to level of 2 and 3, 2 moves slightly to left, 3 moves further to left, 4 moves slightly to left
 	82%
-		-moz-transform: translateX(-$deco-base-unit*4) translateY($deco-base-unit*4)
-		-webkit-transform: translateX(-$deco-base-unit*4) translateY($deco-base-unit*4)
-		-o-transform: translateX(-$deco-base-unit*4) translateY($deco-base-unit*4)
-		transform: translateX(-$deco-base-unit*4) translateY($deco-base-unit*4)
-		background: transparent
 		box-shadow: -$deco-base-unit*7 0 0 $shadowbox1-transparent, -$deco-base-unit*21 0 0 $shadowbox2, -$deco-base-unit*33.6 0 0 $shadowbox3, -$deco-base-unit*26.6 $deco-base-unit*7 0 $shadowbox4, -$deco-base-unit*23.8 $deco-base-unit*16.8 0 $shadowbox5-transparent, -$deco-base-unit*23.8 $deco-base-unit*23.8 0 $shadowbox6-transparent, -$deco-base-unit*16.8 $deco-base-unit*23.8 0 $shadowbox7-transparent, -$deco-base-unit*16.8 $deco-base-unit*14 0 $shadowbox8, -$deco-base-unit*9.8 $deco-base-unit*14 0 $shadowbox9, -$deco-base-unit*9.8 0 0 $shadowbox10, 0 $deco-base-unit*7 0 $shadowbox11-transparent
 	// 17.5s: 10, 2, 3 and 4 move further to left, 9 moves up to level of 2 and 3
 	85%
-		-moz-transform: translateX(-$deco-base-unit*4) translateY($deco-base-unit*4)
-		-webkit-transform: translateX(-$deco-base-unit*4) translateY($deco-base-unit*4)
-		-o-transform: translateX(-$deco-base-unit*4) translateY($deco-base-unit*4)
-		transform: translateX(-$deco-base-unit*4) translateY($deco-base-unit*4)
-		background: transparent
 		box-shadow: -$deco-base-unit*7 0 0 $shadowbox1-transparent, -$deco-base-unit*35 0 0 $shadowbox2, -$deco-base-unit*56 0 0 $shadowbox3, -$deco-base-unit*35 $deco-base-unit*7 0 $shadowbox4, -$deco-base-unit*23.8 $deco-base-unit*16.8 0 $shadowbox5-transparent, -$deco-base-unit*23.8 $deco-base-unit*23.8 0 $shadowbox6-transparent, -$deco-base-unit*16.8 $deco-base-unit*23.8 0 $shadowbox7-transparent, -$deco-base-unit*16.8 $deco-base-unit*14 0 $shadowbox8, -$deco-base-unit*9.8 0 0 $shadowbox9, -$deco-base-unit*14 0 0 $shadowbox10, 0 $deco-base-unit*7 0 $shadowbox11-transparent
 	// 18s: 3 falls down, 2 at falling position, 10 and 9 further to left, 4 at falling position, 8 moves up to level of 4
 	88%
-		-moz-transform: translateX(-$deco-base-unit*4) translateY($deco-base-unit*4)
-		-webkit-transform: translateX(-$deco-base-unit*4) translateY($deco-base-unit*4)
-		-o-transform: translateX(-$deco-base-unit*4) translateY($deco-base-unit*4)
-		transform: translateX(-$deco-base-unit*4) translateY($deco-base-unit*4)
-		background: transparent
 		box-shadow: -$deco-base-unit*7 0 0 $shadowbox1-transparent, -$deco-base-unit*56 0 0 $shadowbox2, -$deco-base-unit*56 $deco-base-unit*60 0 $shadowbox3, -$deco-base-unit*45.5 $deco-base-unit*7 0 $shadowbox4, -$deco-base-unit*17 $deco-base-unit*12 0 $shadowbox5-transparent, -$deco-base-unit*23.8 $deco-base-unit*23.8 0 $shadowbox6-transparent, -$deco-base-unit*16.8 $deco-base-unit*23.8 0 $shadowbox7-transparent, -$deco-base-unit*16.8 $deco-base-unit*7 0 $shadowbox8, -$deco-base-unit*23.8 0 0 $shadowbox9, -$deco-base-unit*28 0 0 $shadowbox10, 0 $deco-base-unit*7 0 $shadowbox11-transparent
 	// 18.25s: 3 becomes transparent; 10 at falling position, 9 to left, 2 fallen, 4 starting to fall, 8 to left
 	91%
-		-moz-transform: translateX(-$deco-base-unit*4) translateY($deco-base-unit*4)
-		-webkit-transform: translateX(-$deco-base-unit*4) translateY($deco-base-unit*4)
-		-o-transform: translateX(-$deco-base-unit*4) translateY($deco-base-unit*4)
-		transform: translateX(-$deco-base-unit*4) translateY($deco-base-unit*4)
-		background: transparent
 		box-shadow: -$deco-base-unit*7 0 0 $shadowbox1-transparent, -$deco-base-unit*56 $deco-base-unit*56 0 $shadowbox2, -$deco-base-unit*56 $deco-base-unit*84 0 $shadowbox3-transparent, -$deco-base-unit*45.5 $deco-base-unit*14 0 $shadowbox4, -$deco-base-unit*23.8 $deco-base-unit*16.8 0 $shadowbox5-transparent, -$deco-base-unit*23.8 $deco-base-unit*23.8 0 $shadowbox6-transparent, -$deco-base-unit*16.8 $deco-base-unit*23.8 0 $shadowbox7-transparent, -$deco-base-unit*36.4 $deco-base-unit*7 0 $shadowbox8, -$deco-base-unit*42 0 0 $shadowbox9, -$deco-base-unit*56 0 0 $shadowbox10, 0 $deco-base-unit*7 0 $shadowbox11-transparent
 	// 18.5s: 10 falls, 9 at falling position, 4 falling, 8 at falling position
 	94%
-		-moz-transform: translateX(-$deco-base-unit*4) translateY($deco-base-unit*4)
-		-webkit-transform: translateX(-$deco-base-unit*4) translateY($deco-base-unit*4)
-		-o-transform: translateX(-$deco-base-unit*4) translateY($deco-base-unit*4)
-		transform: translateX(-$deco-base-unit*4) translateY($deco-base-unit*4)
-		background: transparent
 		box-shadow: -$deco-base-unit*7 0 0 $shadowbox1-transparent, -$deco-base-unit*56 $deco-base-unit*56 0 $shadowbox2-transparent, -$deco-base-unit*56 $deco-base-unit*84 0 $shadowbox3-transparent, -$deco-base-unit*45.5 $deco-base-unit*35 0 $shadowbox4, -$deco-base-unit*23.8 $deco-base-unit*16.8 0 $shadowbox5-transparent, -$deco-base-unit*23.8 $deco-base-unit*23.8 0 $shadowbox6-transparent, -$deco-base-unit*16.8 $deco-base-unit*23.8 0 $shadowbox7-transparent, -$deco-base-unit*45.5 $deco-base-unit*7 0 $shadowbox8, -$deco-base-unit*56 0 0 $shadowbox9, -$deco-base-unit*56 $deco-base-unit*84 0 $shadowbox10, 0 $deco-base-unit*7 0 $shadowbox11-transparent
 	// 18.75s: 9 falls
 	97%
-		-moz-transform: translateX(-$deco-base-unit*4) translateY($deco-base-unit*4)
-		-webkit-transform: translateX(-$deco-base-unit*4) translateY($deco-base-unit*4)
-		-o-transform: translateX(-$deco-base-unit*4) translateY($deco-base-unit*4)
-		transform: translateX(-$deco-base-unit*4) translateY($deco-base-unit*4)
-		background: transparent
 		box-shadow: -$deco-base-unit*7 0 0 $shadowbox1-transparent, -$deco-base-unit*56 $deco-base-unit*56 0 $shadowbox2-transparent, -$deco-base-unit*56 $deco-base-unit*84 0 $shadowbox3-transparent, -$deco-base-unit*45.5 $deco-base-unit*84 0 $shadowbox4, -$deco-base-unit*23.8 $deco-base-unit*16.8 0 $shadowbox5-transparent, -$deco-base-unit*23.8 $deco-base-unit*23.8 0 $shadowbox6-transparent, -$deco-base-unit*16.8 $deco-base-unit*23.8 0 $shadowbox7-transparent, -$deco-base-unit*45.5 $deco-base-unit*7 0 $shadowbox8, -$deco-base-unit*56 $deco-base-unit*70 0 $shadowbox9, -$deco-base-unit*56 $deco-base-unit*84 0 $shadowbox10-transparent, 0 $deco-base-unit*7 0 $shadowbox11-transparent
 	// 19s: 8 becomes transparent
 	100%
-		-moz-transform: translateX(-$deco-base-unit*4) translateY($deco-base-unit*4)
-		-webkit-transform: translateX(-$deco-base-unit*4) translateY($deco-base-unit*4)
-		-o-transform: translateX(-$deco-base-unit*4) translateY($deco-base-unit*4)
-		transform: translateX(-$deco-base-unit*4) translateY($deco-base-unit*4)
-		background: transparent
 		box-shadow: -$deco-base-unit*7 0 0 $shadowbox1-transparent, -$deco-base-unit*56 $deco-base-unit*56 0 $shadowbox2-transparent, -$deco-base-unit*56 $deco-base-unit*84 0 $shadowbox3-transparent, -$deco-base-unit*45.5 $deco-base-unit*35 0 $shadowbox4-transparent, -$deco-base-unit*23.8 $deco-base-unit*16.8 0 $shadowbox5-transparent, -$deco-base-unit*23.8 $deco-base-unit*23.8 0 $shadowbox6-transparent, -$deco-base-unit*16.8 $deco-base-unit*23.8 0 $shadowbox7-transparent, -$deco-base-unit*45.5 $deco-base-unit*16.8 0 $shadowbox8-transparent, -$deco-base-unit*56 $deco-base-unit*70 0 $shadowbox9-transparent, -$deco-base-unit*56 $deco-base-unit*84 0 $shadowbox10-transparent, 0 $deco-base-unit*7 0 $shadowbox11-transparent
 
 +keyframes(line1)
@@ -247,94 +211,94 @@
 +keyframes(line5)
 	5%
 		height: $deco-base-unit*25
-		background: $deco-line-bgcolor
+		background: $shapecolor
 	50%, 80%
 		top: $deco-base-unit*5
 		height: $deco-base-unit*12
-		background: $deco-line-bgcolor
+		background: $shapecolor
 	100%
 		top: $deco-base-unit*5
 
 +keyframes(line6)
 	8%
 		height: $deco-base-unit*20
-		background: $deco-line-bgcolor
+		background: $shapecolor
 	52%, 80%
 		top: $deco-base-unit*5
 		height: $deco-base-unit*11
-		background: $deco-line-bgcolor
+		background: $shapecolor
 	100%
 		top: $deco-base-unit*5
 
 +keyframes(line7)
 	5%
 		width: $deco-base-unit*24
-		background: $deco-line-bgcolor
+		background: $shapecolor
 	50%, 80%
 		right: $deco-base-unit*43
 		width: $deco-base-unit*12
-		background: $deco-line-bgcolor
+		background: $shapecolor
 	100%
 		right: $deco-base-unit*43
 
 +keyframes(line8)
 	5%
 		width: $deco-base-unit*25
-		background: $deco-line-bgcolor
+		background: $shapecolor
 	50%, 80%
 		right: $deco-base-unit*43
 		width: $deco-base-unit*11
-		background: $deco-line-bgcolor
+		background: $shapecolor
 	100%
 		right: $deco-base-unit*43
 
 +keyframes(line9)
 	5%
 		height: $deco-base-unit*23
-		background: $deco-line-bgcolor
+		background: $shapecolor
 	50%, 80%
 		top: $deco-base-unit*4
 		height: $deco-base-unit*12
-		background: $deco-line-bgcolor
+		background: $shapecolor
 	100%
 		top: $deco-base-unit*4
 
 +keyframes(line10)
 	5%
 		height: $deco-base-unit*21
-		background: $deco-line-bgcolor
+		background: $shapecolor
 	50%, 80%
 		top: $deco-base-unit*5
 		height: $deco-base-unit*11
-		background: $deco-line-bgcolor
+		background: $shapecolor
 	100%
 		top: $deco-base-unit*5
 
 +keyframes(line11)
 	5%
 		width: $deco-base-unit*20
-		background: $deco-line-bgcolor
+		background: $shapecolor
 	50%, 80%
 		right: $deco-base-unit*42
 		width: $deco-base-unit*12
-		background: $deco-line-bgcolor
+		background: $shapecolor
 	100%
 		right: $deco-base-unit*42
 
 +keyframes(line12)
 	5%
 		width: $deco-base-unit*20
-		background: $deco-line-bgcolor
+		background: $shapecolor
 	50%, 80%
 		right: $deco-base-unit*43
 		width: $deco-base-unit*11
-		background: $deco-line-bgcolor
+		background: $shapecolor
 	100%
 		right: $deco-base-unit*43
 
-+keyframes(innerbox2)
++keyframes(innerbox2-transform)
 	// 22s: show initial box shadows
-	5%, 7%
+	5%, 10%
 		-moz-transform: rotate(0) scale(1, 1)
 		-webkit-transform: rotate(0) scale(1, 1)
 		-o-transform: rotate(0) scale(1, 1)
@@ -344,25 +308,8 @@
 		-o-transform-origin: $innerbox2-transform-originX-from $innerbox2-transform-originY-from
 		-ms-transform-origin: $innerbox2-transform-originX-from $innerbox2-transform-originY-from
 		transform-origin: $innerbox2-transform-originX-from $innerbox2-transform-originY-from
-		background: $shapecolor
-		box-shadow: -$deco-base-unit*2 0 0 $shapecolor, -$deco-base-unit*2 $deco-base-unit 0 $shapecolor, -$deco-base-unit*4 (-$deco-base-unit) 0 $shapecolor, -$deco-base-unit*4 0 0 $shapecolor, -$deco-base-unit*4 $deco-base-unit 0 $shapecolor, -$deco-base-unit*6 0 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit 0 $shapecolor, -$deco-base-unit*8 0 0 $shapecolor, -$deco-base-unit*8 $deco-base-unit 0 $shapecolor, -$deco-base-unit*10 0 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*2 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*2 0 $shapecolor, -$deco-base-unit*11 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*6 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*6 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*8 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*8 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit*8 $deco-base-unit*9 0 $shapecolor, -$deco-base-unit*8 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit*9 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit*11 0 $shapecolor, -$deco-base-unit*4 $deco-base-unit*9 0 $shapecolor, -$deco-base-unit*4 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit*2 $deco-base-unit*9 0 $shapecolor, -$deco-base-unit*2 $deco-base-unit*10 0 $shapecolor, 0 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit $deco-base-unit*8 0 $shapecolor, 0 $deco-base-unit*8 0 $shapecolor, -$deco-base-unit $deco-base-unit*6 0 $shapecolor, $deco-base-unit $deco-base-unit*6 0 $shapecolor, 0 $deco-base-unit*6 0 $shapecolor, -$deco-base-unit $deco-base-unit*4 0 $shapecolor, 0 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit $deco-base-unit*2 0 $shapecolor, 0 $deco-base-unit*2 0 $shapecolor, -$deco-base-unit*5 $deco-base-unit*5 0 transparent, -$deco-base-unit*6 $deco-base-unit*3 0 transparent, -$deco-base-unit*7 $deco-base-unit*3 0 transparent, -$deco-base-unit*7 $deco-base-unit*4 0 transparent, -$deco-base-unit*7 $deco-base-unit*6 0 transparent, -$deco-base-unit*7 $deco-base-unit*7 0 transparent, -$deco-base-unit*6 $deco-base-unit*7 0 transparent, -$deco-base-unit*4 $deco-base-unit*7 0 transparent, -$deco-base-unit*3 $deco-base-unit*7 0 transparent, -$deco-base-unit*3 $deco-base-unit*6 0 transparent, -$deco-base-unit*3 $deco-base-unit*4 0 transparent, -$deco-base-unit*3 $deco-base-unit*3 0 transparent, -$deco-base-unit*4 $deco-base-unit*3 0 transparent
-	// show outer corner blocks
-	8%, 10%
-		-moz-transform: rotate(0) scale(1, 1)
-		-webkit-transform: rotate(0) scale(1, 1)
-		-o-transform: rotate(0) scale(1, 1) 
-		transform: rotate(0) scale(1, 1)
-		-moz-transform-origin: $innerbox2-transform-originX-from $innerbox2-transform-originY-from
-		-webkit-transform-origin: $innerbox2-transform-originX-from $innerbox2-transform-originY-from
-		-o-transform-origin: $innerbox2-transform-originX-from $innerbox2-transform-originY-from
-		-ms-transform-origin: $innerbox2-transform-originX-from $innerbox2-transform-originY-from
-		transform-origin: $innerbox2-transform-originX-from $innerbox2-transform-originY-from
-		background: $shapecolor
-		box-shadow: -$deco-base-unit*2 0 0 $shapecolor, -$deco-base-unit*2 $deco-base-unit 0 $shapecolor, -$deco-base-unit*4 (-$deco-base-unit) 0 $shapecolor, -$deco-base-unit*4 0 0 $shapecolor, -$deco-base-unit*4 $deco-base-unit 0 $shapecolor, -$deco-base-unit*6 0 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit 0 $shapecolor, -$deco-base-unit*8 0 0 $shapecolor, -$deco-base-unit*8 $deco-base-unit 0 $shapecolor, -$deco-base-unit*10 0 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*2 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*2 0 $shapecolor, -$deco-base-unit*11 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*6 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*6 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*8 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*8 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit*8 $deco-base-unit*9 0 $shapecolor, -$deco-base-unit*8 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit*9 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit*11 0 $shapecolor, -$deco-base-unit*4 $deco-base-unit*9 0 $shapecolor, -$deco-base-unit*4 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit*2 $deco-base-unit*9 0 $shapecolor, -$deco-base-unit*2 $deco-base-unit*10 0 $shapecolor, 0 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit $deco-base-unit*8 0 $shapecolor, 0 $deco-base-unit*8 0 $shapecolor, -$deco-base-unit $deco-base-unit*6 0 $shapecolor, $deco-base-unit $deco-base-unit*6 0 $shapecolor, 0 $deco-base-unit*6 0 $shapecolor, -$deco-base-unit $deco-base-unit*4 0 $shapecolor, 0 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit $deco-base-unit*2 0 $shapecolor, 0 $deco-base-unit*2 0 $shapecolor, -$deco-base-unit*5 $deco-base-unit*5 0 transparent, -$deco-base-unit*6 $deco-base-unit*3 0 transparent, -$deco-base-unit*7 $deco-base-unit*3 0 transparent, -$deco-base-unit*7 $deco-base-unit*4 0 transparent, -$deco-base-unit*7 $deco-base-unit*6 0 transparent, -$deco-base-unit*7 $deco-base-unit*7 0 transparent, -$deco-base-unit*6 $deco-base-unit*7 0 transparent, -$deco-base-unit*4 $deco-base-unit*7 0 transparent, -$deco-base-unit*3 $deco-base-unit*7 0 transparent, -$deco-base-unit*3 $deco-base-unit*6 0 transparent, -$deco-base-unit*3 $deco-base-unit*4 0 transparent, -$deco-base-unit*3 $deco-base-unit*3 0 transparent, -$deco-base-unit*4 $deco-base-unit*3 0 transparent
 	// 23s: rotate 45d and increase size
 	17%
-		background: $shapecolor
-		box-shadow: -$deco-base-unit*2 0 0 $shapecolor, -$deco-base-unit*2 $deco-base-unit 0 $shapecolor, -$deco-base-unit*4 (-$deco-base-unit) 0 $shapecolor, -$deco-base-unit*4 0 0 $shapecolor, -$deco-base-unit*4 $deco-base-unit 0 $shapecolor, -$deco-base-unit*6 0 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit 0 $shapecolor, -$deco-base-unit*8 0 0 $shapecolor, -$deco-base-unit*8 $deco-base-unit 0 $shapecolor, -$deco-base-unit*10 0 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*2 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*2 0 $shapecolor, -$deco-base-unit*11 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*6 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*6 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*8 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*8 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit*8 $deco-base-unit*9 0 $shapecolor, -$deco-base-unit*8 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit*9 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit*11 0 $shapecolor, -$deco-base-unit*4 $deco-base-unit*9 0 $shapecolor, -$deco-base-unit*4 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit*2 $deco-base-unit*9 0 $shapecolor, -$deco-base-unit*2 $deco-base-unit*10 0 $shapecolor, 0 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit $deco-base-unit*8 0 $shapecolor, 0 $deco-base-unit*8 0 $shapecolor, -$deco-base-unit $deco-base-unit*6 0 $shapecolor, $deco-base-unit $deco-base-unit*6 0 $shapecolor, 0 $deco-base-unit*6 0 $shapecolor, -$deco-base-unit $deco-base-unit*4 0 $shapecolor, 0 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit $deco-base-unit*2 0 $shapecolor, 0 $deco-base-unit*2 0 $shapecolor, -$deco-base-unit*5 $deco-base-unit*5 0 transparent, -$deco-base-unit*6 $deco-base-unit*3 0 transparent, -$deco-base-unit*7 $deco-base-unit*3 0 transparent, -$deco-base-unit*7 $deco-base-unit*4 0 transparent, -$deco-base-unit*7 $deco-base-unit*6 0 transparent, -$deco-base-unit*7 $deco-base-unit*7 0 transparent, -$deco-base-unit*6 $deco-base-unit*7 0 transparent, -$deco-base-unit*4 $deco-base-unit*7 0 transparent, -$deco-base-unit*3 $deco-base-unit*7 0 transparent, -$deco-base-unit*3 $deco-base-unit*6 0 transparent, -$deco-base-unit*3 $deco-base-unit*4 0 transparent, -$deco-base-unit*3 $deco-base-unit*3 0 transparent, -$deco-base-unit*4 $deco-base-unit*3 0 transparent
 		-moz-transform: rotate(-45deg) scale(1.5, 1.5)
 		-webkit-transform: rotate(-45deg) scale(1.5, 1.5)
 		-o-transform: rotate(-45deg) scale(1.5, 1.5)
@@ -373,33 +320,7 @@
 		-ms-transform-origin: $innerbox2-transform-originX-to $innerbox2-transform-originY-to
 		transform-origin: $innerbox2-transform-originX-to $innerbox2-transform-originY-to
 	// ~23s: rotate further 45d and increase size further
-	24%
-		background: $shapecolor
-		box-shadow: -$deco-base-unit*2 0 0 $shapecolor, -$deco-base-unit*2 $deco-base-unit 0 $shapecolor, -$deco-base-unit*4 (-$deco-base-unit) 0 $shapecolor, -$deco-base-unit*4 0 0 $shapecolor, -$deco-base-unit*4 $deco-base-unit 0 $shapecolor, -$deco-base-unit*6 0 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit 0 $shapecolor, -$deco-base-unit*8 0 0 $shapecolor, -$deco-base-unit*8 $deco-base-unit 0 $shapecolor, -$deco-base-unit*10 0 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*2 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*2 0 $shapecolor, -$deco-base-unit*11 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*6 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*6 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*8 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*8 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit*8 $deco-base-unit*9 0 $shapecolor, -$deco-base-unit*8 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit*9 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit*11 0 $shapecolor, -$deco-base-unit*4 $deco-base-unit*9 0 $shapecolor, -$deco-base-unit*4 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit*2 $deco-base-unit*9 0 $shapecolor, -$deco-base-unit*2 $deco-base-unit*10 0 $shapecolor, 0 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit $deco-base-unit*8 0 $shapecolor, 0 $deco-base-unit*8 0 $shapecolor, -$deco-base-unit $deco-base-unit*6 0 $shapecolor, $deco-base-unit $deco-base-unit*6 0 $shapecolor, 0 $deco-base-unit*6 0 $shapecolor, -$deco-base-unit $deco-base-unit*4 0 $shapecolor, 0 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit $deco-base-unit*2 0 $shapecolor, 0 $deco-base-unit*2 0 $shapecolor, -$deco-base-unit*5 $deco-base-unit*5 0 transparent, -$deco-base-unit*6 $deco-base-unit*3 0 transparent, -$deco-base-unit*7 $deco-base-unit*3 0 transparent, -$deco-base-unit*7 $deco-base-unit*4 0 transparent, -$deco-base-unit*7 $deco-base-unit*6 0 transparent, -$deco-base-unit*7 $deco-base-unit*7 0 transparent, -$deco-base-unit*6 $deco-base-unit*7 0 transparent, -$deco-base-unit*4 $deco-base-unit*7 0 transparent, -$deco-base-unit*3 $deco-base-unit*7 0 transparent, -$deco-base-unit*3 $deco-base-unit*6 0 transparent, -$deco-base-unit*3 $deco-base-unit*4 0 transparent, -$deco-base-unit*3 $deco-base-unit*3 0 transparent, -$deco-base-unit*4 $deco-base-unit*3 0 transparent
-		-moz-transform: rotate(-90deg) scale(3, 3)
-		-webkit-transform: rotate(-90deg) scale(3, 3)
-		-o-transform: rotate(-90deg) scale(3, 3)
-		transform: rotate(-90deg) scale(3, 3)
-		-moz-transform-origin: $innerbox2-transform-originX-to $innerbox2-transform-originY-to
-		-webkit-transform-origin: $innerbox2-transform-originX-to $innerbox2-transform-originY-to
-		-o-transform-origin: $innerbox2-transform-originX-to $innerbox2-transform-originY-to
-		transform-origin: $innerbox2-transform-originX-to $innerbox2-transform-originY-to
-	// 24s: show inner block
-	31%
-		background: $shapecolor
-		box-shadow: -$deco-base-unit*2 0 0 $shapecolor, -$deco-base-unit*2 $deco-base-unit 0 $shapecolor, -$deco-base-unit*4 (-$deco-base-unit) 0 $shapecolor, -$deco-base-unit*4 0 0 $shapecolor, -$deco-base-unit*4 $deco-base-unit 0 $shapecolor, -$deco-base-unit*6 0 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit 0 $shapecolor, -$deco-base-unit*8 0 0 $shapecolor, -$deco-base-unit*8 $deco-base-unit 0 $shapecolor, -$deco-base-unit*10 0 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*2 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*2 0 $shapecolor, -$deco-base-unit*11 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*6 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*6 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*8 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*8 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit*8 $deco-base-unit*9 0 $shapecolor, -$deco-base-unit*8 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit*9 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit*11 0 $shapecolor, -$deco-base-unit*4 $deco-base-unit*9 0 $shapecolor, -$deco-base-unit*4 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit*2 $deco-base-unit*9 0 $shapecolor, -$deco-base-unit*2 $deco-base-unit*10 0 $shapecolor, 0 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit $deco-base-unit*8 0 $shapecolor, 0 $deco-base-unit*8 0 $shapecolor, -$deco-base-unit $deco-base-unit*6 0 $shapecolor, $deco-base-unit $deco-base-unit*6 0 $shapecolor, 0 $deco-base-unit*6 0 $shapecolor, -$deco-base-unit $deco-base-unit*4 0 $shapecolor, 0 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit $deco-base-unit*2 0 $shapecolor, 0 $deco-base-unit*2 0 $shapecolor, -$deco-base-unit*5 $deco-base-unit*5 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit*3 0 transparent, -$deco-base-unit*7 $deco-base-unit*3 0 transparent, -$deco-base-unit*7 $deco-base-unit*4 0 transparent, -$deco-base-unit*7 $deco-base-unit*6 0 transparent, -$deco-base-unit*7 $deco-base-unit*7 0 transparent, -$deco-base-unit*6 $deco-base-unit*7 0 transparent, -$deco-base-unit*4 $deco-base-unit*7 0 transparent, -$deco-base-unit*3 $deco-base-unit*7 0 transparent, -$deco-base-unit*3 $deco-base-unit*6 0 transparent, -$deco-base-unit*3 $deco-base-unit*4 0 transparent, -$deco-base-unit*3 $deco-base-unit*3 0 transparent, -$deco-base-unit*4 $deco-base-unit*3 0 transparent
-		-moz-transform: rotate(-90deg) scale(3, 3)
-		-webkit-transform: rotate(-90deg) scale(3, 3)
-		-o-transform: rotate(-90deg) scale(3, 3)
-		transform: rotate(-90deg) scale(3, 3)
-		-moz-transform-origin: $innerbox2-transform-originX-to $innerbox2-transform-originY-to
-		-webkit-transform-origin: $innerbox2-transform-originX-to $innerbox2-transform-originY-to
-		-o-transform-origin: $innerbox2-transform-originX-to $innerbox2-transform-originY-to
-		transform-origin: $innerbox2-transform-originX-to $innerbox2-transform-originY-to
-	// 25s: show outer inner blocks, grid should also appear at this point
-	38%, 50%
-		background: $shapecolor
-		box-shadow: -$deco-base-unit*2 0 0 $shapecolor, -$deco-base-unit*2 $deco-base-unit 0 $shapecolor, -$deco-base-unit*4 (-$deco-base-unit) 0 $shapecolor, -$deco-base-unit*4 0 0 $shapecolor, -$deco-base-unit*4 $deco-base-unit 0 $shapecolor, -$deco-base-unit*6 0 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit 0 $shapecolor, -$deco-base-unit*8 0 0 $shapecolor, -$deco-base-unit*8 $deco-base-unit 0 $shapecolor, -$deco-base-unit*10 0 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*2 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*2 0 $shapecolor, -$deco-base-unit*11 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*6 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*6 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*8 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*8 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit*8 $deco-base-unit*9 0 $shapecolor, -$deco-base-unit*8 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit*9 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit*11 0 $shapecolor, -$deco-base-unit*4 $deco-base-unit*9 0 $shapecolor, -$deco-base-unit*4 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit*2 $deco-base-unit*9 0 $shapecolor, -$deco-base-unit*2 $deco-base-unit*10 0 $shapecolor, 0 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit $deco-base-unit*8 0 $shapecolor, 0 $deco-base-unit*8 0 $shapecolor, -$deco-base-unit $deco-base-unit*6 0 $shapecolor, $deco-base-unit $deco-base-unit*6 0 $shapecolor, 0 $deco-base-unit*6 0 $shapecolor, -$deco-base-unit $deco-base-unit*4 0 $shapecolor, 0 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit $deco-base-unit*2 0 $shapecolor, 0 $deco-base-unit*2 0 $shapecolor, -$deco-base-unit*5 $deco-base-unit*5 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit*3 0 $shapecolor, -$deco-base-unit*7 $deco-base-unit*3 0 $shapecolor, -$deco-base-unit*7 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit*7 $deco-base-unit*6 0 $shapecolor, -$deco-base-unit*7 $deco-base-unit*7 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit*7 0 $shapecolor, -$deco-base-unit*4 $deco-base-unit*7 0 $shapecolor, -$deco-base-unit*3 $deco-base-unit*7 0 $shapecolor, -$deco-base-unit*3 $deco-base-unit*6 0 $shapecolor, -$deco-base-unit*3 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit*3 $deco-base-unit*3 0 $shapecolor, -$deco-base-unit*4 $deco-base-unit*3 0 $shapecolor
+	24%, 50%
 		-moz-transform: rotate(-90deg) scale(3, 3)
 		-webkit-transform: rotate(-90deg) scale(3, 3)
 		-o-transform: rotate(-90deg) scale(3, 3)
@@ -409,9 +330,7 @@
 		-o-transform-origin: $innerbox2-transform-originX-to $innerbox2-transform-originY-to
 		transform-origin: $innerbox2-transform-originX-to $innerbox2-transform-originY-to
 	// 26s: increase size further
-	52%
-		background: $shapecolor
-		box-shadow: -$deco-base-unit*2 0 0 $shapecolor, -$deco-base-unit*2 $deco-base-unit 0 $shapecolor, -$deco-base-unit*4 (-$deco-base-unit) 0 $shapecolor, -$deco-base-unit*4 0 0 $shapecolor, -$deco-base-unit*4 $deco-base-unit 0 $shapecolor, -$deco-base-unit*6 0 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit 0 $shapecolor, -$deco-base-unit*8 0 0 $shapecolor, -$deco-base-unit*8 $deco-base-unit 0 $shapecolor, -$deco-base-unit*10 0 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*2 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*2 0 $shapecolor, -$deco-base-unit*11 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*6 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*6 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*8 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*8 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit*8 $deco-base-unit*9 0 transparent, -$deco-base-unit*8 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit*9 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit*11 0 $shapecolor, -$deco-base-unit*4 $deco-base-unit*9 0 $shapecolor, -$deco-base-unit*4 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit*2 $deco-base-unit*9 0 $shapecolor, -$deco-base-unit*2 $deco-base-unit*10 0 $shapecolor, 0 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit $deco-base-unit*8 0 $shapecolor, 0 $deco-base-unit*8 0 $shapecolor, -$deco-base-unit $deco-base-unit*6 0 $shapecolor, $deco-base-unit $deco-base-unit*6 0 $shapecolor, 0 $deco-base-unit*6 0 $shapecolor, -$deco-base-unit $deco-base-unit*4 0 $shapecolor, 0 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit $deco-base-unit*2 0 $shapecolor, 0 $deco-base-unit*2 0 $shapecolor, -$deco-base-unit*5 $deco-base-unit*5 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit*3 0 $shapecolor, -$deco-base-unit*7 $deco-base-unit*3 0 $shapecolor, -$deco-base-unit*7 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit*7 $deco-base-unit*6 0 $shapecolor, -$deco-base-unit*7 $deco-base-unit*7 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit*7 0 $shapecolor, -$deco-base-unit*4 $deco-base-unit*7 0 $shapecolor, -$deco-base-unit*3 $deco-base-unit*7 0 $shapecolor, -$deco-base-unit*3 $deco-base-unit*6 0 $shapecolor, -$deco-base-unit*3 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit*3 $deco-base-unit*3 0 $shapecolor, -$deco-base-unit*4 $deco-base-unit*3 0 $shapecolor
+	52%, 100%
 		-moz-transform: rotate(-90deg) scale(3.5, 3.5)
 		-webkit-transform: rotate(-90deg) scale(3.5, 3.5)
 		-o-transform: rotate(-90deg) scale(3.5, 3.5)
@@ -420,28 +339,32 @@
 		-webkit-transform-origin: $innerbox2-transform-originX-to $innerbox2-transform-originY-to
 		-o-transform-origin: $innerbox2-transform-originX-to $innerbox2-transform-originY-to
 		transform-origin: $innerbox2-transform-originX-to $innerbox2-transform-originY-to
-	// 28s remove box shadow to accommodate letter
-	78%, 91%
+			
++keyframes(innerbox2-shadows)
+	// 22s: show initial box shadows
+	5%, 7%
 		background: $shapecolor
-		box-shadow: -$deco-base-unit*2 0 0 $shapecolor, -$deco-base-unit*2 $deco-base-unit 0 $shapecolor, -$deco-base-unit*4 (-$deco-base-unit) 0 $shapecolor, -$deco-base-unit*4 0 0 $shapecolor, -$deco-base-unit*4 $deco-base-unit 0 $shapecolor, -$deco-base-unit*6 0 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit 0 $shapecolor, -$deco-base-unit*8 0 0 $shapecolor, -$deco-base-unit*8 $deco-base-unit 0 $shapecolor, -$deco-base-unit*10 0 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*2 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*2 0 $shapecolor, -$deco-base-unit*11 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*6 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*6 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*8 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*8 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit*8 $deco-base-unit*9 0 transparent, -$deco-base-unit*8 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit*9 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit*11 0 $shapecolor, -$deco-base-unit*4 $deco-base-unit*9 0 $shapecolor, -$deco-base-unit*4 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit*2 $deco-base-unit*9 0 $shapecolor, -$deco-base-unit*2 $deco-base-unit*10 0 $shapecolor, 0 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit $deco-base-unit*8 0 $shapecolor, 0 $deco-base-unit*8 0 $shapecolor, -$deco-base-unit $deco-base-unit*6 0 $shapecolor, $deco-base-unit $deco-base-unit*6 0 $shapecolor, 0 $deco-base-unit*6 0 $shapecolor, -$deco-base-unit $deco-base-unit*4 0 $shapecolor, 0 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit $deco-base-unit*2 0 $shapecolor, 0 $deco-base-unit*2 0 $shapecolor, -$deco-base-unit*5 $deco-base-unit*5 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit*3 0 $shapecolor, -$deco-base-unit*7 $deco-base-unit*3 0 $shapecolor, -$deco-base-unit*7 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit*7 $deco-base-unit*6 0 $shapecolor, -$deco-base-unit*7 $deco-base-unit*7 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit*7 0 $shapecolor, -$deco-base-unit*4 $deco-base-unit*7 0 $shapecolor, -$deco-base-unit*3 $deco-base-unit*7 0 $shapecolor, -$deco-base-unit*3 $deco-base-unit*6 0 $shapecolor, -$deco-base-unit*3 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit*3 $deco-base-unit*3 0 transparent, -$deco-base-unit*4 $deco-base-unit*3 0 $shapecolor
-		-moz-transform: rotate(-90deg) scale(3.5, 3.5)
-		-webkit-transform: rotate(-90deg) scale(3.5, 3.5)
-		-o-transform: rotate(-90deg) scale(3.5, 3.5)
-		transform: rotate(-90deg) scale(3.5, 3.5)
-		-moz-transform-origin: $innerbox2-transform-originX-to $innerbox2-transform-originY-to
-		-webkit-transform-origin: $innerbox2-transform-originX-to $innerbox2-transform-originY-to
-		-o-transform-origin: $innerbox2-transform-originX-to $innerbox2-transform-originY-to
-		transform-origin: $innerbox2-transform-originX-to $innerbox2-transform-originY-to
+		box-shadow: -$deco-base-unit*2 0 0 $shapecolor, -$deco-base-unit*2 $deco-base-unit 0 $shapecolor, -$deco-base-unit*4 (-$deco-base-unit) 0 $shapecolor, -$deco-base-unit*4 0 0 $shapecolor, -$deco-base-unit*4 $deco-base-unit 0 $shapecolor, -$deco-base-unit*6 0 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit 0 $shapecolor, -$deco-base-unit*8 0 0 $shapecolor, -$deco-base-unit*8 $deco-base-unit 0 $shapecolor, -$deco-base-unit*10 0 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*2 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*2 0 $shapecolor, -$deco-base-unit*11 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*6 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*6 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*8 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*8 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit*8 $deco-base-unit*9 0 $shapecolor, -$deco-base-unit*8 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit*9 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit*11 0 $shapecolor, -$deco-base-unit*4 $deco-base-unit*9 0 $shapecolor, -$deco-base-unit*4 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit*2 $deco-base-unit*9 0 $shapecolor, -$deco-base-unit*2 $deco-base-unit*10 0 $shapecolor, 0 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit $deco-base-unit*8 0 $shapecolor, 0 $deco-base-unit*8 0 $shapecolor, -$deco-base-unit $deco-base-unit*6 0 $shapecolor, $deco-base-unit $deco-base-unit*6 0 $shapecolor, 0 $deco-base-unit*6 0 $shapecolor, -$deco-base-unit $deco-base-unit*4 0 $shapecolor, 0 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit $deco-base-unit*2 0 $shapecolor, 0 $deco-base-unit*2 0 $shapecolor, -$deco-base-unit*5 $deco-base-unit*5 0 transparent, -$deco-base-unit*6 $deco-base-unit*3 0 transparent, -$deco-base-unit*7 $deco-base-unit*3 0 transparent, -$deco-base-unit*7 $deco-base-unit*4 0 transparent, -$deco-base-unit*7 $deco-base-unit*6 0 transparent, -$deco-base-unit*7 $deco-base-unit*7 0 transparent, -$deco-base-unit*6 $deco-base-unit*7 0 transparent, -$deco-base-unit*4 $deco-base-unit*7 0 transparent, -$deco-base-unit*3 $deco-base-unit*7 0 transparent, -$deco-base-unit*3 $deco-base-unit*6 0 transparent, -$deco-base-unit*3 $deco-base-unit*4 0 transparent, -$deco-base-unit*3 $deco-base-unit*3 0 transparent, -$deco-base-unit*4 $deco-base-unit*3 0 transparent
+	// show outer corner blocks
+	8%, 24%
+		background: $shapecolor
+		box-shadow: -$deco-base-unit*2 0 0 $shapecolor, -$deco-base-unit*2 $deco-base-unit 0 $shapecolor, -$deco-base-unit*4 (-$deco-base-unit) 0 $shapecolor, -$deco-base-unit*4 0 0 $shapecolor, -$deco-base-unit*4 $deco-base-unit 0 $shapecolor, -$deco-base-unit*6 0 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit 0 $shapecolor, -$deco-base-unit*8 0 0 $shapecolor, -$deco-base-unit*8 $deco-base-unit 0 $shapecolor, -$deco-base-unit*10 0 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*2 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*2 0 $shapecolor, -$deco-base-unit*11 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*6 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*6 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*8 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*8 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit*8 $deco-base-unit*9 0 $shapecolor, -$deco-base-unit*8 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit*9 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit*11 0 $shapecolor, -$deco-base-unit*4 $deco-base-unit*9 0 $shapecolor, -$deco-base-unit*4 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit*2 $deco-base-unit*9 0 $shapecolor, -$deco-base-unit*2 $deco-base-unit*10 0 $shapecolor, 0 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit $deco-base-unit*8 0 $shapecolor, 0 $deco-base-unit*8 0 $shapecolor, -$deco-base-unit $deco-base-unit*6 0 $shapecolor, $deco-base-unit $deco-base-unit*6 0 $shapecolor, 0 $deco-base-unit*6 0 $shapecolor, -$deco-base-unit $deco-base-unit*4 0 $shapecolor, 0 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit $deco-base-unit*2 0 $shapecolor, 0 $deco-base-unit*2 0 $shapecolor, -$deco-base-unit*5 $deco-base-unit*5 0 transparent, -$deco-base-unit*6 $deco-base-unit*3 0 transparent, -$deco-base-unit*7 $deco-base-unit*3 0 transparent, -$deco-base-unit*7 $deco-base-unit*4 0 transparent, -$deco-base-unit*7 $deco-base-unit*6 0 transparent, -$deco-base-unit*7 $deco-base-unit*7 0 transparent, -$deco-base-unit*6 $deco-base-unit*7 0 transparent, -$deco-base-unit*4 $deco-base-unit*7 0 transparent, -$deco-base-unit*3 $deco-base-unit*7 0 transparent, -$deco-base-unit*3 $deco-base-unit*6 0 transparent, -$deco-base-unit*3 $deco-base-unit*4 0 transparent, -$deco-base-unit*3 $deco-base-unit*3 0 transparent, -$deco-base-unit*4 $deco-base-unit*3 0 transparent
+	// 23s: rotate 45d and increase size
+	// ~23s: rotate further 45d and increase size further
+	// 24s: show inner block
+	31%
+		background: $shapecolor
+		box-shadow: -$deco-base-unit*2 0 0 $shapecolor, -$deco-base-unit*2 $deco-base-unit 0 $shapecolor, -$deco-base-unit*4 (-$deco-base-unit) 0 $shapecolor, -$deco-base-unit*4 0 0 $shapecolor, -$deco-base-unit*4 $deco-base-unit 0 $shapecolor, -$deco-base-unit*6 0 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit 0 $shapecolor, -$deco-base-unit*8 0 0 $shapecolor, -$deco-base-unit*8 $deco-base-unit 0 $shapecolor, -$deco-base-unit*10 0 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*2 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*2 0 $shapecolor, -$deco-base-unit*11 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*6 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*6 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*8 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*8 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit*8 $deco-base-unit*9 0 $shapecolor, -$deco-base-unit*8 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit*9 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit*11 0 $shapecolor, -$deco-base-unit*4 $deco-base-unit*9 0 $shapecolor, -$deco-base-unit*4 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit*2 $deco-base-unit*9 0 $shapecolor, -$deco-base-unit*2 $deco-base-unit*10 0 $shapecolor, 0 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit $deco-base-unit*8 0 $shapecolor, 0 $deco-base-unit*8 0 $shapecolor, -$deco-base-unit $deco-base-unit*6 0 $shapecolor, $deco-base-unit $deco-base-unit*6 0 $shapecolor, 0 $deco-base-unit*6 0 $shapecolor, -$deco-base-unit $deco-base-unit*4 0 $shapecolor, 0 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit $deco-base-unit*2 0 $shapecolor, 0 $deco-base-unit*2 0 $shapecolor, -$deco-base-unit*5 $deco-base-unit*5 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit*3 0 transparent, -$deco-base-unit*7 $deco-base-unit*3 0 transparent, -$deco-base-unit*7 $deco-base-unit*4 0 transparent, -$deco-base-unit*7 $deco-base-unit*6 0 transparent, -$deco-base-unit*7 $deco-base-unit*7 0 transparent, -$deco-base-unit*6 $deco-base-unit*7 0 transparent, -$deco-base-unit*4 $deco-base-unit*7 0 transparent, -$deco-base-unit*3 $deco-base-unit*7 0 transparent, -$deco-base-unit*3 $deco-base-unit*6 0 transparent, -$deco-base-unit*3 $deco-base-unit*4 0 transparent, -$deco-base-unit*3 $deco-base-unit*3 0 transparent, -$deco-base-unit*4 $deco-base-unit*3 0 transparent
+	// 25s: show outer inner blocks, grid should also appear at this point
+	38%, 50%
+		background: $shapecolor
+		box-shadow: -$deco-base-unit*2 0 0 $shapecolor, -$deco-base-unit*2 $deco-base-unit 0 $shapecolor, -$deco-base-unit*4 (-$deco-base-unit) 0 $shapecolor, -$deco-base-unit*4 0 0 $shapecolor, -$deco-base-unit*4 $deco-base-unit 0 $shapecolor, -$deco-base-unit*6 0 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit 0 $shapecolor, -$deco-base-unit*8 0 0 $shapecolor, -$deco-base-unit*8 $deco-base-unit 0 $shapecolor, -$deco-base-unit*10 0 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*2 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*2 0 $shapecolor, -$deco-base-unit*11 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*6 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*6 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*8 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*8 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit*8 $deco-base-unit*9 0 $shapecolor, -$deco-base-unit*8 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit*9 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit*11 0 $shapecolor, -$deco-base-unit*4 $deco-base-unit*9 0 $shapecolor, -$deco-base-unit*4 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit*2 $deco-base-unit*9 0 $shapecolor, -$deco-base-unit*2 $deco-base-unit*10 0 $shapecolor, 0 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit $deco-base-unit*8 0 $shapecolor, 0 $deco-base-unit*8 0 $shapecolor, -$deco-base-unit $deco-base-unit*6 0 $shapecolor, $deco-base-unit $deco-base-unit*6 0 $shapecolor, 0 $deco-base-unit*6 0 $shapecolor, -$deco-base-unit $deco-base-unit*4 0 $shapecolor, 0 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit $deco-base-unit*2 0 $shapecolor, 0 $deco-base-unit*2 0 $shapecolor, -$deco-base-unit*5 $deco-base-unit*5 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit*3 0 $shapecolor, -$deco-base-unit*7 $deco-base-unit*3 0 $shapecolor, -$deco-base-unit*7 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit*7 $deco-base-unit*6 0 $shapecolor, -$deco-base-unit*7 $deco-base-unit*7 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit*7 0 $shapecolor, -$deco-base-unit*4 $deco-base-unit*7 0 $shapecolor, -$deco-base-unit*3 $deco-base-unit*7 0 $shapecolor, -$deco-base-unit*3 $deco-base-unit*6 0 $shapecolor, -$deco-base-unit*3 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit*3 $deco-base-unit*3 0 $shapecolor, -$deco-base-unit*4 $deco-base-unit*3 0 $shapecolor
+	// 26s: increase size further and bottom right box shadow moves up
+	52%, 91%
+		background: $shapecolor
+		box-shadow: -$deco-base-unit*2 0 0 $shapecolor, -$deco-base-unit*2 $deco-base-unit 0 $shapecolor, -$deco-base-unit*4 (-$deco-base-unit) 0 $shapecolor, -$deco-base-unit*4 0 0 $shapecolor, -$deco-base-unit*4 $deco-base-unit 0 $shapecolor, -$deco-base-unit*6 0 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit 0 $shapecolor, -$deco-base-unit*8 0 0 $shapecolor, -$deco-base-unit*8 $deco-base-unit 0 $shapecolor, -$deco-base-unit*10 0 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*2 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*2 0 $shapecolor, -$deco-base-unit*11 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*6 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*6 0 $shapecolor, -$deco-base-unit*10 $deco-base-unit*8 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*8 0 $shapecolor, -$deco-base-unit*9 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit*8 $deco-base-unit*9 0 transparent, -$deco-base-unit*8 $deco-base-unit*10 0 transparent, -$deco-base-unit*6 $deco-base-unit*9 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit*11 0 $shapecolor, -$deco-base-unit*4 $deco-base-unit*9 0 $shapecolor, -$deco-base-unit*4 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit*2 $deco-base-unit*9 0 $shapecolor, -$deco-base-unit*2 $deco-base-unit*10 0 $shapecolor, 0 $deco-base-unit*10 0 $shapecolor, -$deco-base-unit $deco-base-unit*8 0 $shapecolor, 0 $deco-base-unit*8 0 $shapecolor, -$deco-base-unit $deco-base-unit*6 0 $shapecolor, $deco-base-unit $deco-base-unit*6 0 $shapecolor, 0 $deco-base-unit*6 0 $shapecolor, -$deco-base-unit $deco-base-unit*4 0 $shapecolor, 0 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit $deco-base-unit*2 0 $shapecolor, 0 $deco-base-unit*2 0 $shapecolor, -$deco-base-unit*5 $deco-base-unit*5 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit*3 0 $shapecolor, -$deco-base-unit*7 $deco-base-unit*3 0 $shapecolor, -$deco-base-unit*7 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit*7 $deco-base-unit*6 0 $shapecolor, -$deco-base-unit*7 $deco-base-unit*7 0 $shapecolor, -$deco-base-unit*6 $deco-base-unit*7 0 $shapecolor, -$deco-base-unit*4 $deco-base-unit*7 0 $shapecolor, -$deco-base-unit*3 $deco-base-unit*7 0 $shapecolor, -$deco-base-unit*3 $deco-base-unit*6 0 $shapecolor, -$deco-base-unit*3 $deco-base-unit*4 0 $shapecolor, -$deco-base-unit*3 $deco-base-unit*3 0 $shapecolor, -$deco-base-unit*4 $deco-base-unit*3 0 $shapecolor
 	// 32s: hide
 	100%
-		-moz-transform: rotate(-90deg) scale(3.5, 3.5)
-		-webkit-transform: rotate(-90deg) scale(3.5, 3.5)
-		-o-transform: rotate(-90deg) scale(3.5, 3.5)
-		transform: rotate(-90deg) scale(3.5, 3.5)
-		-moz-transform-origin: $innerbox2-transform-originX-to $innerbox2-transform-originY-to
-		-webkit-transform-origin: $innerbox2-transform-originX-to $innerbox2-transform-originY-to
-		-o-transform-origin: $innerbox2-transform-originX-to $innerbox2-transform-originY-to
-		transform-origin: $innerbox2-transform-originX-to $innerbox2-transform-originY-to
 		box-shadow: -$deco-base-unit*2 0 0 transparent, -$deco-base-unit*2 $deco-base-unit 0 transparent, -$deco-base-unit*4 (-$deco-base-unit) 0 transparent, -$deco-base-unit*4 0 0 transparent, -$deco-base-unit*4 $deco-base-unit 0 transparent, -$deco-base-unit*6 0 0 transparent, -$deco-base-unit*6 $deco-base-unit 0 transparent, -$deco-base-unit*8 0 0 transparent, -$deco-base-unit*8 $deco-base-unit 0 transparent, -$deco-base-unit*10 0 0 transparent, -$deco-base-unit*10 $deco-base-unit*2 0 transparent, -$deco-base-unit*9 $deco-base-unit*2 0 transparent, -$deco-base-unit*11 $deco-base-unit*4 0 transparent, -$deco-base-unit*10 $deco-base-unit*4 0 transparent, -$deco-base-unit*9 $deco-base-unit*4 0 transparent, -$deco-base-unit*10 $deco-base-unit*6 0 transparent, -$deco-base-unit*9 $deco-base-unit*6 0 transparent, -$deco-base-unit*10 $deco-base-unit*8 0 transparent, -$deco-base-unit*9 $deco-base-unit*8 0 transparent, -$deco-base-unit*9 $deco-base-unit*10 0 transparent, -$deco-base-unit*8 $deco-base-unit*9 0 transparent, -$deco-base-unit*8 $deco-base-unit*10 0 transparent, -$deco-base-unit*6 $deco-base-unit*9 0 transparent, -$deco-base-unit*6 $deco-base-unit*10 0 transparent, -$deco-base-unit*6 $deco-base-unit*11 0 transparent, -$deco-base-unit*4 $deco-base-unit*9 0 transparent, -$deco-base-unit*4 $deco-base-unit*10 0 transparent, -$deco-base-unit*2 $deco-base-unit*9 0 transparent, -$deco-base-unit*2 $deco-base-unit*10 0 transparent, 0 $deco-base-unit*10 0 transparent, -$deco-base-unit $deco-base-unit*8 0 transparent, 0 $deco-base-unit*8 0 transparent, -$deco-base-unit $deco-base-unit*6 0 transparent, $deco-base-unit $deco-base-unit*6 0 transparent, 0 $deco-base-unit*6 0 transparent, -$deco-base-unit $deco-base-unit*4 0 transparent, 0 $deco-base-unit*4 0 transparent, -$deco-base-unit $deco-base-unit*2 0 transparent, 0 $deco-base-unit*2 0 transparent, -$deco-base-unit*5 $deco-base-unit*5 0 transparent, -$deco-base-unit*6 $deco-base-unit*3 0 transparent, -$deco-base-unit*7 $deco-base-unit*3 0 transparent, -$deco-base-unit*7 $deco-base-unit*4 0 transparent, -$deco-base-unit*7 $deco-base-unit*6 0 transparent, -$deco-base-unit*7 $deco-base-unit*7 0 transparent, -$deco-base-unit*6 $deco-base-unit*7 0 transparent, -$deco-base-unit*4 $deco-base-unit*7 0 transparent, -$deco-base-unit*3 $deco-base-unit*7 0 transparent, -$deco-base-unit*3 $deco-base-unit*6 0 transparent, -$deco-base-unit*3 $deco-base-unit*4 0 transparent, -$deco-base-unit*3 $deco-base-unit*3 0 transparent, -$deco-base-unit*4 $deco-base-unit*3 0 transparent
 
 +keyframes(grid1)
@@ -454,51 +377,51 @@
 		background: $shapecolor
 		box-shadow: -$deco-base-unit 0 0 $shapecolor, -$deco-base-unit*2 0 0 $shapecolor, -$deco-base-unit*3 0 0 $shapecolor, -$deco-base-unit*4 0 0 $shapecolor, -$deco-base-unit*5 0 0 $shapecolor, -$deco-base-unit*6 0 0 $shapecolor, -$deco-base-unit*7 0 0 $shapecolor, -$deco-base-unit*8 0 0 $shapecolor, -$deco-base-unit*9 0 0 $shapecolor, -$deco-base-unit*10 0 0 $shapecolor, -$deco-base-unit*11 0 0 $shapecolor, -$deco-base-unit*12 0 0 $shapecolor, -$deco-base-unit*13 0 0 $shapecolor
 			
-+keyframes(name-1)
++keyframes(company1-name)
 	10%
-		color: $textcolor
+		color: $animationtextcolor
 	80%, 90%
 		top: 350px
 		left: 100px
-		color: $textcolor
+		color: $animationtextcolor
 	100%
 		top: 350px
 		left: 100px
 		
-+keyframes(name-2)
++keyframes(company1-date)
 	10%
-		color: $textcolor
+		color: $animationtextcolor
 	80%, 90%
 		top: 400px
 		left: 150px
-		color: $textcolor
+		color: $animationtextcolor
 	100%
 		top: 400px
 		left: 150px
 		
-+keyframes(name-7)
++keyframes(company4-name)
 	10%
-		color: $textcolor
+		color: $animationtextcolor
 	50%, 90%
 		right: 20%
-		color: $textcolor
+		color: $animationtextcolor
 	100%
 		right: 20%
 
-+keyframes(name-9)
++keyframes(company5-name)
 	10%
-		color: $textcolor
+		color: $animationtextcolor
 	60%, 75%
 		left: 222px
-		color: $textcolor
+		color: $animationtextcolor
 	100%
 		left: 222px
 		
-+keyframes(name-10)
++keyframes(company5-date)
 	10%
-		color: $textcolor
+		color: $animationtextcolor
 	60%, 75%
 		left: 270px
-		color: $textcolor
+		color: $animationtextcolor
 	100%
 		left: 270px

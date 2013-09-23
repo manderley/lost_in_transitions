@@ -32,10 +32,8 @@ var checkMusic = function() {
 var prepareToPlay = function() {
 	console.log("prepareToPlay");
 	var play_button = document.getElementById("play");
-	var pause_button = document.getElementById("pause");
 	//trigger.className = "ready";
 	play_button.addEventListener("click", checkMusic, false);
-	pause_button.addEventListener("click", pause, false);
 	//console.log("showPlay end");
 };
 
