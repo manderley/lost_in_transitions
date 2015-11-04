@@ -1,0 +1,30 @@
+{
+  "name": "lost_in_transitions",
+  "version": "1.0.0",
+  "description": "CSS animation",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manderley/lost_in_transitions.git"
+  },
+  "keywords": [
+    "CSS",
+    "keyframes",
+    "animation"
+  ],
+  "author": "Rebecca Edwards",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manderley/lost_in_transitions/issues"
+  },
+  "homepage": "https://github.com/manderley/lost_in_transitions#readme",
+  "devDependencies": {
+    "cssnext": "^1.8.4",
+    "gulp": "^3.9.0",
+    "gulp-postcss": "^6.0.1",
+    "postcss-import": "^7.1.0"
+  }
+}

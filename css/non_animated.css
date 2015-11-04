@@ -1,0 +1,172 @@
+.no-js section h1, 
+.no-js h2, 
+.no-js .linkedin, 
+.no-js .twitter, 
+.no-js .github,  
+.no-js dt, 
+.no-js dd, 
+.no-js .company, 
+.no-js .date, 
+.no-js #skills li {
+	animation: none;
+}
+		
+.no-js .decoration {
+	display: none;
+}
+
+.no-js header, 
+.no-js section, 
+.no-js footer {
+	width: 60%;
+	max-width: 64em;
+}
+		
+.no-js section {
+	background: #fff;
+	height: auto;
+	text-align: left;
+	box-sizing: border-box;
+	padding: var(--baseline) var(--baseline) 0 var(--baseline);
+	border-top: 1px solid #808080;
+	border-bottom: 1px solid #808080;
+}
+		
+.no-js h1 {
+	font-size: 18px;
+	width: auto;
+	color: #000;
+}
+			
+.no-js h2 {
+	display: block;
+}
+			
+.no-js h1,
+.no-js h2	{
+	position: relative;
+	top: auto;
+	left: auto;
+	letter-spacing: normal;
+	text-transform: none;
+}
+			
+.no-js dl,
+.no-js ol,
+.no-js ul {
+	position: relative;
+	height: auto;
+	width: auto;
+}
+
+.no-js dl {
+	top: auto;
+	right: auto;
+}			
+
+.no-js dt,
+.no-js dd {
+	top: auto;
+	left: auto;
+	letter-spacing: normal;
+}
+
+.no-js dd {
+	font-size: 16px;
+}
+
+.no-js h2,
+.no-js dt {
+	font-family: var(--subheadingfont);
+	color: var(--subheadingcolor);
+}
+	
+.no-js dt,
+.no-js dd,
+.no-js #companies li,
+.no-js #skills li {
+	color: var(--textcolor);
+	position: relative;
+	text-transform: none;
+}
+
+.no-js #social dt,
+.no-js #social dd {
+	position: relative;
+	padding: 0;
+	width: auto;
+	height: auto;
+	letter-spacing: normal;
+}
+
+.no-js #social dt {
+	color: var(--textcolor);
+	line-height: var(--baselineheight);
+}	
+
+.no-js .linkedin,
+.no-js .twitter,
+.no-js .github {
+	position: relative;
+	padding: 0;
+	width: auto;
+	height: auto;
+	letter-spacing: normal;
+}
+	
+.no-js em {
+	margin-left: auto;
+}
+
+.no-js #companies {
+	position: relative;
+	width: auto;
+	height: auto;
+	top: auto;
+	left: auto;
+}
+
+.no-js #companies li {
+	position: relative;
+	height: auto;
+	width: auto;
+	top: auto;
+	left: auto;
+	text-transform: none;
+}
+
+.no-js span {
+	position: relative;
+	letter-spacing: normal;
+	color: var(--textcolor);
+	font-size: 16px;
+}
+
+.no-js .company,
+.no-js .date {
+	top: auto;
+	left: auto;
+	right: auto;
+}
+
+.no-js #skills li {
+	letter-spacing: normal;
+	font-size: 16px;
+	top: auto;
+	left: auto;
+}
+		
+.no-js ul,
+.no-js dl {
+	margin-bottom: calc(var(--baseline) * 1.5);
+}
+
+.no-js li,
+.no-js dd {
+	line-height: var(--baselineheight);
+}
+
+.no-js h2,
+.no-js dt {
+	margin-bottom: calc(var(--baseline) / 2);
+}

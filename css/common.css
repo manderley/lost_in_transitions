@@ -1,0 +1,37 @@
+html {
+	font-size: 100%; /* ~16px */
+	height: 100%;
+	font-family: var(--basefont);
+	background: var(--bodybgcolor);
+	color: var(var(--textcolor));
+}
+	
+body {
+	height: 100%;
+	text-align: center;
+}
+	
+h1 {
+	font-family: var(--headingfont);
+	font-size: 26px;
+	color: var(--headingcolor);
+	padding: 0.75em 0;
+}
+	
+header, section, footer {
+	margin: 0 auto;
+}
+	
+footer {
+	padding: 1.5em 0;
+}
+	
+footer p {
+	text-align: left;
+	font-size: 14px;
+	line-height: 1.4;
+}
+			
+.no-js .animated {
+	display: none;
+}
