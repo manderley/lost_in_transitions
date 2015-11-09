@@ -1,15 +1,23 @@
-* {
+/** {
 	animation-play-state: paused;
 }
 
-.playing * {
+.animation-active * {
 	animation-play-state: running;
 }
 	
-#play {
-	padding-bottom: 1em;
-	color: #000;
+*/
+
+.animation-inactive .play {
+	/*color: #fff;*/
+}
+
+.animation-inactive .play:hover {
 	cursor: pointer;
+}
+
+.animation-active .play {
+	
 }
 	
 header, section, footer {
@@ -24,7 +32,6 @@ section {
 	background: var(--framebgcolor);
 }
 	
-
 section h1, 
 h2 {
 	position: absolute;
@@ -41,6 +48,9 @@ section h1 {
 	font-size: 18px;
 	letter-spacing: 1em;
 	line-height: 1.6;
+}
+
+.animation-active section h1 {
 	animation: text 4.25s 1 linear 4.25s forwards; 
 }
 		
@@ -50,19 +60,21 @@ h2 {
 	letter-spacing: 0.5em;
 	font-size: 16px;
 }
-		
-h2:nth-of-type(1) {
-	animation: text 5s 1 linear forwards; 
+
+.animation-active h2:nth-of-type(1) {
+	animation: text 5s 1 linear forwards;
 }
 		
-
-h2:nth-of-type(2) {
+.animation-active h2:nth-of-type(2) {
 	animation: text 25.5s 1 linear forwards 8.5s; 
 }
 		
 h2:nth-of-type(3) {
 	top: 78px;
 	left: 150px;
+}
+
+.animation-active h2:nth-of-type(3) {
 	animation: text 7.25s 1 linear both 26s; 
 }
 
@@ -84,6 +96,9 @@ dl:nth-of-type(2) dd {
 	left: 570px;
 	font-size: 22px;
 	letter-spacing: 1.1em;
+}
+
+.animation-active dl:nth-of-type(2) dd {
 	animation: text 5.5s 1 ease-in forwards 9s; 
 }
 
@@ -91,7 +106,10 @@ dl:nth-of-type(2) dt {
 	top: 135px;
 	left: 150px;
 	letter-spacing: 0.6em;
-	animation: text 5.5s 1 ease-in forwards 9s; 
+}
+
+.animation-active dl:nth-of-type(2) dt {
+	animation: text 5.5s 1 ease-in forwards 9s;
 }
 
 #social dd,
@@ -116,13 +134,19 @@ dl:nth-of-type(2) dt {
 	background-size: 0 0;
 	top: calc(-var(--frame-height) * 1.5);
 	left: 140px;
+}
+
+.animation-active #social dt.linkedin {
 	animation: linkedin-dt 5s 1 linear forwards; 
 }
 		
 #social dd.linkedin {
 	top: 524px;
 	left: 212px;
-	animation: text 5s 1 linear forwards; 
+}
+
+.animation-active #social dd.linkedin {
+	animation: text 5s 1 linear forwards;
 }
 		
 #social	dt.twitter {
@@ -133,6 +157,9 @@ dl:nth-of-type(2) dt {
 	background-size: 0 0;
 	top: calc(var(--frame-height) * 1.5);
 	left: 538px;
+}
+
+.animation-active #social	dt.twitter {
 	animation: twitter-dt 5s 1 linear forwards; 
 }
 		
@@ -142,6 +169,9 @@ dl:nth-of-type(2) dt {
 	width: 130px;
 	top: 170px;
 	left: calc(var(--frame-width) * 1.5);
+}
+
+.animation-active #social dd.twitter {
 	animation: twitter-dd 5s 1 linear forwards; 
 }
 
@@ -161,12 +191,18 @@ em {
 	background-image: url("../../images/github-32.png");
 	top: calc(-var(--frame-height) * 1.5);
 	left: 862px;
+}
+
+.animation-active #social	dt.github {
 	animation: github-dt 5s 1 linear forwards; 
 }
 		
 #social dd.github {
 	top: 262px;
 	left: 728px;
+}
+
+.animation-active #social dd.github {
 	animation: text 5.5s 1 linear forwards; 
 }
 			
@@ -200,48 +236,72 @@ dt,
 #companies li:nth-child(1) .company {
 	top: 0;
 	left: -50%;
+}
+
+.animation-active #companies li:nth-child(1) .company {
 	animation: company1-name 4s 1 linear both 11.5s; 
 }
 			
 #companies li:nth-child(1) .date {
 	top: 150%;
 	left: 100%;
+}
+
+.animation-active #companies li:nth-child(1) .date {
 	animation: company1-date 4s 1 linear both 11.5s; 
 }
 			
 #companies li:nth-child(2) .company {
 	left: 15%;
 	top: 70%;
+}
+
+.animation-active #companies li:nth-child(2) .company {
 	animation: text 3.75s 1 linear both 15s; 
 }
 			
 #companies li:nth-child(2) .date {
 	left: 18%;
 	top: 75%;
+}
+
+.animation-active #companies li:nth-child(2) .date {
 	animation: text 3.75s 1 linear both 15s; 
 }
 			
 #companies li:nth-child(3) .company {
 	right: 20%;
 	top: 75%;
+}
+
+.animation-active #companies li:nth-child(3) .company {
 	animation: text 3.75s 1 linear both 17s; 
 }
 			
 #companies li:nth-child(3) .date {
 	right: 23%;
 	top: 80%;
+}
+
+.animation-active #companies li:nth-child(3) .date {
 	animation: text 3.75s 1 linear both 17s; 
 }
 			
 #companies li:nth-child(4) .company {
 	right: -50%;
 	top: 60%;
+}
+
+.animation-active #companies li:nth-child(4) .company {
 	animation: company4-name 3.5s 1 linear both 19s; 
 }
 			
 #companies li:nth-child(4) .date {
 	right: 20%;
 	top: 65%;
+}
+
+.animation-active #companies li:nth-child(4) .date {
 	animation: text 3.5s 1 linear both 20s; 
 }
 			
@@ -249,6 +309,9 @@ dt,
 	top: 235px;
 	/*left: 222px;*/
 	left: calc(-var(--frame-width) / 2);
+}
+
+.animation-active #companies li:nth-child(5) .company {
 	animation: company5-name 3s 1 linear both 22s; 
 }
 			
@@ -256,6 +319,9 @@ dt,
 	top: 380px;
 	/*left: 270px;*/
 	left: calc(-var(--frame-width) / 2);
+}
+
+.animation-active #companies li:nth-child(5) .date {
 	animation: company5-date 3s 1 linear both 22s; 
 }
 			
@@ -263,6 +329,9 @@ dt,
 	letter-spacing: 1.55em;
 	font-size: 19px;
 	position: absolute;
+}
+
+.animation-active #skills li {
 	animation: text 7.25s 1 linear both 26s; 
 }
 		
@@ -333,6 +402,9 @@ div.decoration div {
 	width: calc(var(--deco-base-unit) * 7);
 	height: calc(var(--deco-base-unit) * 7);
 	box-shadow: calc(-var(--deco-base-unit) * 7) 0 0 var(--shadowbox1-transparent), calc(-var(--deco-base-unit) * 22.4) calc(-var(--deco-base-unit) * 70) 0 var(--shadowbox2-transparent), calc(-var(--deco-base-unit) * 29.4) calc(-var(--deco-base-unit) * 70) 0 var(--shadowbox3-transparent), calc(-var(--deco-base-unit) * 50.4) calc(var(--deco-base-unit) * 30.8) 0 var(--shadowbox4-transparent), calc(-var(--deco-base-unit) * 29.4) calc(var(--deco-base-unit) * 23.8) 0 var(--shadowbox5-transparent), calc(-var(--deco-base-unit) * 29.4) calc(var(--deco-base-unit) * 30.8) 0 var(--shadowbox6-transparent), calc(-var(--deco-base-unit) * 43.4) calc(var(--deco-base-unit) * 30.8) 0 var(--shadowbox7-transparent), calc(-var(--deco-base-unit) * 9.8) calc(var(--deco-base-unit) * 30.8) 0 var(--shadowbox8-transparent), calc(-var(--deco-base-unit) * 2.8) calc(var(--deco-base-unit) * 30.8) 0 var(--shadowbox9-transparent), 0 calc(var(--deco-base-unit) * 23.8) 0 var(--shadowbox10-transparent), 0 calc(var(--deco-base-unit) * 7) 0 var(--shadowbox11-transparent);
+}
+
+.animation-active #deco-box {
 	animation: box 12s 1 linear forwards 7.75s, box-shadows 12s 1 linear forwards 7.75s; 
 }
 
@@ -345,6 +417,9 @@ div.decoration div {
 	/*top: calc(-var(--deco-base-unit) *5.6;*/
 	/*height: calc(var(--deco-base-unit) *33.6;*/
 	/*background: $shapecolor;*/
+}
+
+.animation-active #deco-line1 {
 	animation: line1 4.25s 1 ease-in forwards 15.25s; 
 }
 	
@@ -357,6 +432,9 @@ div.decoration div {
 	/*top: calc(-var(--deco-base-unit) *4.2;*/
 	/*height: calc(var(--deco-base-unit) *29.4;*/
 	/*background: $shapecolor;*/
+}
+
+.animation-active #deco-line2 {
 	animation: line2 4.25s 1 ease-in forwards 15.25s; 
 }
 	
@@ -369,6 +447,9 @@ div.decoration div {
 	/*right: 0;*/
 	/*width: calc(var(--deco-base-unit) *56;*/
 	/*background: $shapecolor;*/
+}
+
+.animation-active #deco-line3 {
 	animation: line3 4.25s 1 ease-in forwards 15.25s; 
 }
 	
@@ -381,6 +462,9 @@ div.decoration div {
 	/*right: calc(var(--deco-base-unit) *3.6;*/
 	/*width: calc(var(--deco-base-unit) *42;*/
 	/*background: $shapecolor;*/
+}
+
+.animation-active #deco-line4 {
 	animation: line4 4.25s 1 ease-in forwards 15.25s; 
 }
 	
@@ -392,6 +476,9 @@ div.decoration div {
 	right: calc(var(--deco-base-unit) * 16.75);
 	/*right: calc(var(--deco-base-unit) *45;*/
 	/*background: $shapecolor;*/
+}
+
+.animation-active #deco-innerbox {
 	animation: innerbox 4.35s 1 linear forwards 19s; 
 }
 	
@@ -404,6 +491,9 @@ div.decoration div {
 	/*background: $shapecolor;*/
 	/*top: calc(var(--deco-base-unit) *5;*/
 	/*height: calc(var(--deco-base-unit) *12;*/
+}
+
+.animation-active #deco-line5 {
 	animation: line5 3s 1 linear forwards 19.75s; 
 }
 	
@@ -416,6 +506,9 @@ div.decoration div {
 	/*background: $shapecolor;*/
 	/*top: calc(var(--deco-base-unit) *5;*/
 	/*height: calc(var(--deco-base-unit) *11;*/
+}
+
+.animation-active #deco-line6 {
 	animation: line6 3s 1 linear forwards 19.75s; 
 }
 	
@@ -428,6 +521,9 @@ div.decoration div {
 	/*background: $shapecolor;*/
 	/*right: calc(var(--deco-base-unit) *43;*/
 	/*width: calc(var(--deco-base-unit) *12;*/
+}
+
+.animation-active #deco-line7 {
 	animation: line7 3s 1 linear forwards 19.75s; 
 }
 	
@@ -440,6 +536,9 @@ div.decoration div {
 	/*background: $shapecolor;*/
 	/*right: calc(var(--deco-base-unit) *43;*/
 	/*width: calc(var(--deco-base-unit) *11;*/
+}
+
+.animation-active #deco-line8 {
 	animation: line8 3s 1 linear forwards 19.75s; 
 }
 	
@@ -452,6 +551,9 @@ div.decoration div {
 	/*background: $shapecolor;*/
 	/*top: calc(var(--deco-base-unit) *4;*/
 	/*height: calc(var(--deco-base-unit) *12;*/
+}
+
+.animation-active #deco-line9 {
 	animation: line9 3s 1 linear forwards 19.75s; 
 }
 	
@@ -464,6 +566,9 @@ div.decoration div {
 	/*background: $shapecolor;*/
 	/*top: calc(var(--deco-base-unit) *5;*/
 	/*height: calc(var(--deco-base-unit) *11;*/
+}
+
+.animation-active #deco-line10 {
 	animation: line10 3s 1 linear forwards 19.75s; 
 }
 	
@@ -476,9 +581,12 @@ div.decoration div {
 	/*background: $shapecolor;*/
 	/*right: calc(var(--deco-base-unit) *42;*/
 	/*width: calc(var(--deco-base-unit) *12;*/
-	animation: line11 3s 1 linear forwards 19.75s; 
 }
 	
+.animation-active #deco-line11 {
+	animation: line11 3s 1 linear forwards 19.75s; 
+}
+
 #deco-line12 {
 	background: transparent;
 	top: calc(var(--deco-base-unit) * 7);
@@ -488,6 +596,9 @@ div.decoration div {
 	/*background: $shapecolor;*/
 	/*right: calc(var(--deco-base-unit) *43;*/
 	/*width: calc(var(--deco-base-unit) *11;*/
+}
+
+.animation-active #deco-line12 {
 	animation: line12 3s 1 linear forwards 19.75s; 
 }
 	
@@ -499,7 +610,10 @@ div.decoration div {
 	right: calc(var(--deco-base-unit) * 43);
 	overflow: visible;
 	box-shadow: calc(-var(--deco-base-unit) * 2) 0 0 transparent, calc(-var(--deco-base-unit) * 2) var(--deco-base-unit) 0 transparent, calc(-var(--deco-base-unit) * 4) -var(--deco-base-unit) 0 transparent, calc(-var(--deco-base-unit) * 4) 0 0 transparent, calc(-var(--deco-base-unit) * 4) var(--deco-base-unit) 0 transparent, calc(-var(--deco-base-unit) * 6) 0 0 transparent, calc(-var(--deco-base-unit) * 6) var(--deco-base-unit) 0 transparent, calc(-var(--deco-base-unit) * 8) 0 0 transparent, calc(-var(--deco-base-unit) * 8) var(--deco-base-unit) 0 transparent, calc(-var(--deco-base-unit) * 10) 0 0 transparent, calc(-var(--deco-base-unit) * 10) calc(var(--deco-base-unit) * 2) 0 transparent, calc(-var(--deco-base-unit) * 9) calc(var(--deco-base-unit) * 2) 0 transparent, calc(-var(--deco-base-unit) * 11) calc(var(--deco-base-unit) * 4) 0 transparent, calc(-var(--deco-base-unit) * 10) calc(var(--deco-base-unit) * 4) 0 transparent, calc(-var(--deco-base-unit) * 9) calc(var(--deco-base-unit) * 4) 0 transparent, calc(-var(--deco-base-unit) * 10) calc(var(--deco-base-unit) * 6) 0 transparent, calc(-var(--deco-base-unit) * 9) calc(var(--deco-base-unit) * 6) 0 transparent, calc(-var(--deco-base-unit) * 10) calc(var(--deco-base-unit) * 8) 0 transparent, calc(-var(--deco-base-unit) * 9) calc(var(--deco-base-unit) * 8) 0 transparent, calc(-var(--deco-base-unit) * 10) calc(var(--deco-base-unit) * 10) 0 transparent, calc(-var(--deco-base-unit) * 8) calc(var(--deco-base-unit) * 9) 0 transparent, calc(-var(--deco-base-unit) * 8) calc(var(--deco-base-unit) * 10) 0 transparent, calc(-var(--deco-base-unit) * 6) calc(var(--deco-base-unit) * 9) 0 transparent, calc(-var(--deco-base-unit) * 6) calc(var(--deco-base-unit) * 10) 0 transparent, calc(-var(--deco-base-unit) * 6) calc(var(--deco-base-unit) * 11) 0 transparent, calc(-var(--deco-base-unit) * 4) calc(var(--deco-base-unit) * 9) 0 transparent, calc(-var(--deco-base-unit) * 4) calc(var(--deco-base-unit) * 10) 0 transparent, calc(-var(--deco-base-unit) * 2) calc(var(--deco-base-unit) * 9) 0 transparent, calc(-var(--deco-base-unit) * 2) calc(var(--deco-base-unit) * 10) 0 transparent, 0 calc(var(--deco-base-unit) * 10) 0 transparent, -var(--deco-base-unit) calc(var(--deco-base-unit) * 8) 0 transparent, 0 calc(var(--deco-base-unit) * 8) 0 transparent, -var(--deco-base-unit) calc(var(--deco-base-unit) * 6) 0 transparent, var(--deco-base-unit) calc(var(--deco-base-unit) * 6) 0 transparent, 0 calc(var(--deco-base-unit) * 6) 0 transparent, -var(--deco-base-unit) calc(var(--deco-base-unit) * 4) 0 transparent, 0 calc(var(--deco-base-unit) * 4) 0 transparent, -var(--deco-base-unit) calc(var(--deco-base-unit) * 2) 0 transparent, 0 calc(var(--deco-base-unit) * 2) 0 transparent, calc(-var(--deco-base-unit) * 5) calc(var(--deco-base-unit) * 5) 0 transparent, calc(-var(--deco-base-unit) * 6) calc(var(--deco-base-unit) * 3) 0 transparent, calc(-var(--deco-base-unit) * 7) calc(var(--deco-base-unit) * 3) 0 transparent, calc(-var(--deco-base-unit) * 7) calc(var(--deco-base-unit) * 4) 0 transparent, calc(-var(--deco-base-unit) * 7) calc(var(--deco-base-unit) * 6) 0 transparent, calc(-var(--deco-base-unit) * 7) calc(var(--deco-base-unit) * 7) 0 transparent, calc(-var(--deco-base-unit) * 6) calc(var(--deco-base-unit) * 7) 0 transparent, calc(-var(--deco-base-unit) * 4) calc(var(--deco-base-unit) * 7) 0 transparent, calc(-var(--deco-base-unit) * 3) calc(var(--deco-base-unit) * 7) 0 transparent, calc(-var(--deco-base-unit) * 3) calc(var(--deco-base-unit) * 6) 0 transparent, calc(-var(--deco-base-unit) * 3) calc(var(--deco-base-unit) * 4) 0 transparent, calc(-var(--deco-base-unit) * 3) calc(var(--deco-base-unit) * 3) 0 transparent, calc(-var(--deco-base-unit) * 4) calc(var(--deco-base-unit) * 3) 0 transparent;
-	animation: innerbox2-transform 10.75s 1 linear forwards 21.25s, innerbox2-shadows 10.75s 1 linear forwards 21.25s; 
+}
+
+.animation-active #deco-innerbox2 {
+	animation: innerbox2-transform 10.75s 1 linear forwards 21.25s, innerbox2-shadows 10.75s 1 linear forwards 21.25s;
 }
 	
 #deco-grid1, 
@@ -514,13 +628,19 @@ div.decoration div {
 	width: calc(var(--deco-base-unit) * 13);
 	height: 1px;
 	box-shadow: 0 var(--deco-base-unit) 0 transparent, 0 calc(var(--deco-base-unit) * 2) 0 transparent, 0 calc(var(--deco-base-unit) * 3) 0 transparent, 0 calc(var(--deco-base-unit) * 4) 0 transparent, 0 calc(var(--deco-base-unit) * 5) 0 transparent, 0 calc(var(--deco-base-unit) * 6) 0 transparent, 0 calc(var(--deco-base-unit) * 7) 0 transparent, 0 calc(var(--deco-base-unit) * 8) 0 transparent, 0 calc(var(--deco-base-unit) * 9) 0 transparent, 0 calc(var(--deco-base-unit) * 10) 0 transparent, 0 calc(var(--deco-base-unit) * 11) 0 transparent, 0 calc(var(--deco-base-unit) * 12) 0 transparent, 0 calc(var(--deco-base-unit) * 13) 0 transparent;
-	animation: grid1 7.5s 1 ease-in-out forwards 24.5s; 
+}
+
+.animation-active #deco-grid1 {
+	animation: grid1 7.5s 1 ease-in-out forwards 24.5s;
 }
 	
 #deco-grid2 {
 	width: 1px;
 	height: calc(var(--deco-base-unit) * 13);
 	box-shadow: -var(--deco-base-unit) 0 0 transparent, calc(-var(--deco-base-unit) * 2) 0 0 transparent, calc(-var(--deco-base-unit) * 3) 0 0 transparent, calc(-var(--deco-base-unit) * 4) 0 0 transparent, calc(-var(--deco-base-unit) * 5) 0 0 transparent, calc(-var(--deco-base-unit) * 6) 0 0 transparent, calc(-var(--deco-base-unit) * 7) 0 0 transparent, calc(-var(--deco-base-unit) * 8) 0 0 transparent, calc(-var(--deco-base-unit) * 9) 0 0 transparent, calc(-var(--deco-base-unit) * 10) 0 0 transparent, calc(-var(--deco-base-unit) * 11) 0 0 transparent, calc(-var(--deco-base-unit) * 12) 0 0 transparent, calc(-var(--deco-base-unit) * 13) 0 0 transparent;
-	animation: grid2 7.5s 1 ease-in-out forwards 24.5s; 
+}
+
+.animation-active #deco-grid2 {
+	animation: grid2 7.5s 1 ease-in-out forwards 24.5s;
 }
 	
