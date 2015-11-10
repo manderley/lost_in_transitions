@@ -8,23 +8,35 @@
 	
 */
 
-.animation-inactive .play {
-	/*color: #fff;*/
+.button {
+	color: var(--buttontextcolor);
+	background-color: var(--buttonbgcolor);
+	border: 0;
+	font-size: var(--basefontsize);
+	padding: 6px 12px 8px;
+	float: left;
+	margin-bottom: var(--baseline);
 }
 
-.animation-inactive .play:hover {
+.button:hover {
+	background-color: var(--buttonbghovercolor);
 	cursor: pointer;
 }
 
-.animation-active .play {
-	
+.button.disabled {
+	background-color: var(--buttondisabledbgcolor);
+}
+
+.button.disabled:hover {
+	cursor: default;
 }
 	
-header, section, footer {
+header, main, footer {
 	width: var(--frame-width);
 }
 	
 section {
+	width: 100%;
 	font-family: var(--animationfont);
 	overflow: hidden;
 	position: relative;

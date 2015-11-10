@@ -1,7 +1,3 @@
-// bind play link to function to start animation
-// starting animation involves:
-// adding CSS class to body element
-// playing music
 var utils = (function() {
 	
 	var utils = {};
@@ -34,7 +30,7 @@ var animation = (function() {
 
 	var animation = {};
 
-	var playLink;
+	var playButton;
 	var container;
 	var finalAnimationElement;
 	var animationEndEvent;
@@ -42,31 +38,40 @@ var animation = (function() {
 	function initialiseAnimation() {
 		getUIElements();
 		animationEndEvent = utils.whichAnimationEvent();
-		addEventListeners()
+		addEventListeners();
 	}
 
 	function getUIElements() {
-		playLink = document.querySelector('.play');
+		playButton = document.querySelector('.button');
 		container = document.getElementsByTagName('body')[0];
 		finalAnimationElement = document.getElementById('deco-grid2');
 	}
 
 	function addEventListeners() {
-
-		playLink.onclick = enableAnimations;
-
-		finalAnimationElement.addEventListener(animationEndEvent, function() {
-			resetAnimations();
-		});
-
+		playButton.addEventListener('click', enableAnimations, false);
+		finalAnimationElement.addEventListener(animationEndEvent, resetAnimations, false);
 	}
 
 	function enableAnimations() {
 		container.setAttribute('class', 'animation-active');
+		disablePlayButton();
 	}
 
 	function resetAnimations() {
 		container.setAttribute('class', 'animation-inactive');
+		enablePlayButton();
+	}
+
+	function enablePlayButton() {
+		playButton.classList.remove('disabled');
+		playButton.removeAttribute('disabled');
+		playButton.addEventListener('click', enableAnimations, false);
+	}
+
+	function disablePlayButton() {
+		playButton.classList.add('disabled');
+		playButton.setAttribute('disabled', 'disabled');
+		playButton.removeEventListener('click', enableAnimations, false);
 	}
 
 	animation.init = function() {

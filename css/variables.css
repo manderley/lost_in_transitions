@@ -3,6 +3,10 @@
 	--textcolor: #000;
 	--headingcolor: #000;
 	--subheadingcolor: #000;
+	--buttonbgcolor: #2196f3;
+	--buttonbghovercolor: #64b5f6;
+	--buttontextcolor: #fff;
+	--buttondisabledbgcolor: rgb(192, 192, 192);
 
 	--basefont: Cambria, Georgia, Times, "Times New Roman";
 	--headingfont: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -10,7 +14,7 @@
 
 	--headingfontweight: normal;
 
-	--basefontsize: 16;
+	--basefontsize: 16px;
 	--baselineheight: 1.5em;
 	--baseline: var(--baselineheight);
 
