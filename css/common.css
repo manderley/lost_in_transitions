@@ -3,7 +3,7 @@ html {
 	height: 100%;
 	font-family: var(--basefont);
 	background: var(--bodybgcolor);
-	color: var(var(--textcolor));
+	color: var(--textcolor);
 }
 	
 body {
@@ -32,6 +32,10 @@ footer p {
 	line-height: 1.4;
 }
 			
-.no-js .animated {
-	display: none;
+a {
+	color: var(--linkcolor);
+}
+
+a:hover {
+	color: var(--linkcolorhover);
 }
