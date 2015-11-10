@@ -34,6 +34,7 @@ var animation = (function() {
 	var container;
 	var finalAnimationElement;
 	var animationEndEvent;
+	var sound;
 
 	function initialiseAnimation() {
 		getUIElements();
@@ -45,6 +46,7 @@ var animation = (function() {
 		playButton = document.querySelector('.button');
 		container = document.getElementsByTagName('body')[0];
 		finalAnimationElement = document.getElementById('deco-grid2');
+		sound = document.querySelector('.sound');
 	}
 
 	function addEventListeners() {
@@ -54,6 +56,7 @@ var animation = (function() {
 
 	function enableAnimations() {
 		container.setAttribute('class', 'animation-active');
+		sound.play();
 		disablePlayButton();
 	}
 
