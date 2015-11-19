@@ -34,6 +34,7 @@ footer p {
 			
 a {
 	color: var(--linkcolor);
+	text-decoration: none;
 }
 
 a:hover {

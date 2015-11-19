@@ -1,13 +1,3 @@
-/** {
-	animation-play-state: paused;
-}
-
-.animation-active * {
-	animation-play-state: running;
-}
-	
-*/
-
 .button {
 	color: var(--buttontextcolor);
 	background-color: var(--buttonbgcolor);
@@ -117,7 +107,8 @@ dl:nth-of-type(2) dd {
 
 dl:nth-of-type(2) dt {
 	top: 135px;
-	left: 150px;
+	/*left: 150px;*/
+	left: 100px;
 	letter-spacing: 0.6em;
 }
 

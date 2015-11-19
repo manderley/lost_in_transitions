@@ -2,6 +2,7 @@
 @import 'colours';
 @import 'variables';
 @import 'common';
+@import 'fonts';
 @import 'keyframes';
 @import 'animated';
-@import 'non_animated';
+@import 'contact';

@@ -1,0 +1,44 @@
+.author {
+	overflow: hidden;
+}
+
+.author p {
+	float: left;
+}
+
+ul.contact {
+	position: relative;
+	height: auto;
+	width: auto;
+	text-align: left;
+	display: inline-block;
+	float: left;
+}
+
+.contact li {
+	display: inline-block;
+	float: left;
+	padding-left: 12px;
+}
+
+.contact-twitter {
+	background-image: url(../../images/twitter-32.png);
+}
+
+.contact-linkedin {
+	background-image: url(../../images/linkedin-32.png);
+}
+
+.contact-github {
+	background-image: url(../../images/github-32.png);
+}
+
+.contact li span {
+	position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
